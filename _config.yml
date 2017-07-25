@@ -1,0 +1,4 @@
+theme: minima
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
+
+title: 'SHARP Impact Assessment'
