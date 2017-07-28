@@ -55,3 +55,13 @@ $on-laptop:        800px !default;
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;	
 }
+
+#svgholder {
+	width: 1400px;
+	height: 550px;
+	
+	@include media-query($on-palm) {
+		width: 1000px;
+		height: 400px;
+	}
+}
