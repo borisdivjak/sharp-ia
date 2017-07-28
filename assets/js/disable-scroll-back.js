@@ -4,7 +4,10 @@
 
 
 function preventScrollLeft(e) {
-	if (e.originalEvent.wheelDeltaX < 0) $(e.delegateTarget).off('wheel');
+	// wheelDeltaX works for webkit, deltaX for FF
+	if ((e.originalEvent.wheelDeltaX < 0) || (e.originalEvent.deltaX > 0)) {
+		$(e.delegateTarget).off('wheel');
+	}
   e = e || window.event;
   if (e.preventDefault)
       e.preventDefault();
@@ -18,5 +21,4 @@ $(function () {
 			$(this).on('wheel', preventScrollLeft);
 		}
 	});
-
 });
