@@ -65,3 +65,50 @@ $on-laptop:        800px !default;
 		height: 400px;
 	}
 }
+
+#modal-background {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	background: white;
+	opacity: 0.9;
+	z-index: 1;	
+	display: none;
+}
+
+
+.modal {
+	position: absolute;
+	width: 760px;
+	height: 80%;
+	background: $grey-color-light;
+	top: 50px;
+	left: 50%;
+	margin-left: -400px;
+	padding: 20px;
+	z-index: 10;
+	display: none;
+	
+	
+	.close-modal {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	
+	@include media-query($on-laptop) {
+		width: $on-palm - 40px;
+		margin-left: $on-palm * -0.5;
+	}	
+	@include media-query($on-palm) {
+		width: auto;
+		height: auto;
+		margin-left: auto;
+		left: 10px;
+		top: 10px;
+		right: 10px;
+		bottom: 10px;
+	}	
+}

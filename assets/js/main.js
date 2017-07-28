@@ -12,13 +12,11 @@ function loadDone(svg, error) {
 	$('svg a path').on('mouseout', 	function() { $(this).attr('fill', '#000000').attr('fill-opacity', '0'); });
 	$('svg a').on('click', function(e) {
 		e.preventDefault();
+		$('#modal-background').css('display', 'block');
+		$($(this).attr('xlink:href')+'.modal').css('display', 'block'); // note - xlink:href works for links from google slides
 	});
-	
-//	$('svg a path').each(function() {
-//		$('svg path[d="' + $('svg a path').attr('d') + '"]').not(this)
-//			.attr('fill', colorHover).attr('fill-opacity', '1')
-//	});
-//	$('svg a path').attr('fill', '#000000').attr('fill-opacity', '1');
-//	$('svg a').on('over')
+	$('.modal .close-modal, #modal-background').on('click', function(e) {
+		$('#modal-background, .modal').css('display', 'none');
+	});
 }
 	
