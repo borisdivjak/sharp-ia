@@ -53,6 +53,7 @@ $on-laptop:        800px !default;
 
 #scrollable {
 	overflow-x: scroll;
+	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;	
 }
 
