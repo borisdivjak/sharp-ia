@@ -4,7 +4,15 @@ $(function () {
 	$(window).on('resize', function() {
 		$('#svgholder svg').attr('height', $('#svgholder').css('height'));
 		$('#svgholder svg').attr('width', $('#svgholder').css('width'));
+		
+		// keep video ratio at 16:9
+		var iframeWidth = $('.modal iframe').css('width');
+		var iframeHeight = 0;
+		if (iframeWidth) iframeHeight = Math.floor(parseInt(iframeWidth) * 0.5625) + 'px';
+		$('.modal iframe').css('height', iframeHeight);
 	});
+	
+	$(window).resize();
 }); 
  
 function loadDone(svg, error) { 
