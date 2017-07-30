@@ -26,7 +26,12 @@ function loadDone(svg, error) {
 		e.preventDefault();
 		$('.modal-background').css('display', 'block');
 		$('.modal').css('display', 'block'); 
-		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html' ); // note - xlink:href works for links from google slides
+
+		// note - xlink:href works for links from google slides
+		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html', function() {
+			// on load complete
+			$(window).resize();
+		} ); 
 	});
 
 	// close modal
