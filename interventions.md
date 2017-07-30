@@ -4,6 +4,6 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 
 lklhkjh
 
-![test]({{site.baseurl}}//assets/images/_DSC0086.jpg)
+![test]({{site.baseurl}}/assets/images/_DSC0086.jpg)
 
 
