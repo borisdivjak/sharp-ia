@@ -76,6 +76,7 @@ $on-laptop:        800px !default;
 	background: rgba(255, 255, 255, 0.9);
 	z-index: 1;	
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;	
 	display: none;
 }
 
