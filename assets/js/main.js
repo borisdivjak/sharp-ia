@@ -34,11 +34,11 @@ function loadDone(svg, error) {
 		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html', function() {
 			// on load complete
 			$(window).resize();
-			$('.modal-background').css('overflow', 'hidden');
+			$('#scrollable').css('-webkit-overflow-scrolling', 'auto');
+//			$('.modal-background').css('overflow', 'hidden');
+//			$('.modal-background').css('overflow', 'auto');
+			$('.modal-background').css('-webkit-overflow-scrolling', 'touch');
 			setTimeout(function() {
-				$('#scrollable').css('-webkit-overflow-scrolling', 'auto');
-				$('.modal-background').css('overflow', 'auto');
-				$('.modal-background').css('-webkit-overflow-scrolling', 'touch');
 			}, 10);
 		} ); 
 	});
