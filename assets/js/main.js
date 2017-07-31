@@ -36,13 +36,17 @@ function loadDone(svg, error) {
 			$(window).resize();
 			$('.modal-background').css('overflow', 'hidden');
 			setTimeout(function() {
+				$('#scrollable').css('-webkit-overflow-scrolling', 'auto');
 				$('.modal-background').css('overflow', 'auto');
+				$('.modal-background').css('-webkit-overflow-scrolling', 'touch');
 			}, 10);
 		} ); 
 	});
 
 	// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
+		$('#scrollable').css('-webkit-overflow-scrolling', 'touch');
+		$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
 		$('.modal-background, .modal').css('display', 'none');
 		$('.modal-content').html('');
 	});
