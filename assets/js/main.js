@@ -35,12 +35,14 @@ function loadDone(svg, error) {
 			// on load complete
 			$(window).resize(); // call resize to resize video iframes
 			$('.modal-background').css('-webkit-overflow-scrolling', 'touch'); // need to call this dynamically otherwise doesn't work properly on iPhone
+			$('body').css('overflow', 'hidden'); // stop scrolling of main content when in modal mode
 		} ); 
 	});
 
 	// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
 		$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
+		$('body').css('overflow', 'inherit'); 
 		$('.modal-background, .modal').css('display', 'none');
 		$('.modal-content').html('');
 	});
