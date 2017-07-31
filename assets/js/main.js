@@ -33,19 +33,13 @@ function loadDone(svg, error) {
 		// note - xlink:href works for links from google slides
 		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html', function() {
 			// on load complete
-			$(window).resize();
-			$('#scrollable').css('-webkit-overflow-scrolling', 'auto');
-//			$('.modal-background').css('overflow', 'hidden');
-//			$('.modal-background').css('overflow', 'auto');
-			$('.modal-background').css('-webkit-overflow-scrolling', 'touch');
-			setTimeout(function() {
-			}, 10);
+			$(window).resize(); // call resize to resize video iframes
+			$('.modal-background').css('-webkit-overflow-scrolling', 'touch'); // need to call this dynamically otherwise doesn't work properly on iPhone
 		} ); 
 	});
 
 	// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
-		$('#scrollable').css('-webkit-overflow-scrolling', 'touch');
 		$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
 		$('.modal-background, .modal').css('display', 'none');
 		$('.modal-content').html('');
