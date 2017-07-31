@@ -31,6 +31,10 @@ function loadDone(svg, error) {
 		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html', function() {
 			// on load complete
 			$(window).resize();
+			$('.modal-background').css('overflow', 'hidden');
+			setTimeout(function() {
+				$('.modal-background').css('overflow', 'auto');
+			}, 10);
 		} ); 
 	});
 
