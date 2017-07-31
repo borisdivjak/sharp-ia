@@ -1,4 +1,7 @@
 $(function () {
+    // Disable caching of AJAX responses
+	$.ajaxSetup ({ cache: false });
+
 	// Link directly to google slides (make sure link to presentation is open to everyone) using the following format:
 	// https:\/\/docs.google.com/presentation/d/<PRESENTATION_ID>/export/<FORMAT>?pageid=<PAGE_ID>
 	$('#svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1ofY1HkJv8ytUCaq8K_CCsKXIcBZQNbol34FviIeIilM/export/svg?pageid=p', onLoad: loadDone });	
