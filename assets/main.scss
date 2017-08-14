@@ -22,7 +22,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    900px !default;
+$content-width:    800px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
@@ -86,6 +86,45 @@ $on-laptop:        800px !default;
 
 .home-wrapper {
 	text-align: center;
+}
+
+table {
+	background: #90d03b;
+	color: white;
+	text-align: left;
+	border-spacing: 0;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	td, th {
+		vertical-align: top;
+		padding: 0;
+		margin: 0;
+		border-left: none;
+		border-right: none;
+	}
+	
+	td {
+		border-top: 3px solid white;
+		padding-top: 8px;
+	}
+
+	th:first-of-type {
+		width: 33%;
+	}
+	
+	td:first-of-type {
+		font-size: 2em;
+		font-weight: bold;
+		padding-top: 0;
+		padding-right: 10px;
+
+		@include media-query($on-palm) {
+			font-size: 1.5em;
+		}
+	}
+	
 }
 
 

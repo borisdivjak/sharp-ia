@@ -10,7 +10,7 @@ Our service has been shown to produce positive therapeutic outcomes and high lev
 The following document presents the evidence of the impact of our activities in detail. 
 
 
-| Quick overview                                                                                                          |
+| Overview                                                                                                          |
 |---------------------|---------------------------------------------------------------------------------------------------|
 | 61%                 | Reduction in total admission time for patients after using SHARP                                  |
 | £230,000            | Estimated saving due to reduced need for mental health, physical health and social care services. |
