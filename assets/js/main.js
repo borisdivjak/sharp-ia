@@ -7,18 +7,18 @@ $(function () {
 
 	// Link directly to google slides (make sure link to presentation is open to everyone) using the following format:
 	// https:\/\/docs.google.com/presentation/d/<PRESENTATION_ID>/export/<FORMAT>?pageid=<PAGE_ID>
-	$('#svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1iZeU-UGoDyJSDpJ5Za7PDcPkp99XkUl9bxiN4SEx8kA/export/svg?pageid=g24d4306262_0_12', onLoad: loadDone });	
+	$('.svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1iZeU-UGoDyJSDpJ5Za7PDcPkp99XkUl9bxiN4SEx8kA/export/svg?pageid=g24d4306262_0_12', onLoad: loadDone });	
 
 	$(window).on('resize', function() {
-		$('#svgholder svg').attr('width', $('#svgholder').width());
+		$('.svgholder svg').attr('width', $('.svgholder').width());
 		
 		// on narrow screens reduce height 
-		if ($('#svgholder').width() < svgBaseWidth) {
-			$('#svgholder svg').attr('height', $('#svgholder').width() / svgBaseWidth * svgBaseHeight);			
+		if ($('.svgholder').width() < svgBaseWidth) {
+			$('.svgholder svg').attr('height', $('.svgholder').width() / svgBaseWidth * svgBaseHeight);			
 		}
 		// on wider screens set effective max height for svg based on original dimesnions
 		else {
-			$('#svgholder svg').attr('height', svgBaseHeight);
+			$('.svgholder svg').attr('height', svgBaseHeight);
 		}
 		
 		// keep video ratio at 16:9
