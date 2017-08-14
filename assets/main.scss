@@ -60,6 +60,7 @@ $on-laptop:        800px !default;
 	}
 
 	.sharp-logo {
+		box-sizing: border-box;
 		width: 100%;
 		text-align: center;
 		padding: 10px;
