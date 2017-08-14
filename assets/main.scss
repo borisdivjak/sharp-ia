@@ -58,13 +58,8 @@ $on-laptop:        800px !default;
 }
 
 #svgholder {
-	width: 1400px;
-	height: 550px;
-	
-	@include media-query($on-palm) {
-		width: 1000px;
-		height: 400px;
-	}
+	text-align: center;
+	min-height: 100px;
 }
 
 .modal-background {
