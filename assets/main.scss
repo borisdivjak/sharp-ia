@@ -51,6 +51,35 @@ $on-laptop:        800px !default;
   "minima/syntax-highlighting"
 ;
 
+.site-header {
+	border-top: none;
+	border-bottom: none;
+	
+	.wrapper {
+		position: relative;
+	}
+
+	.sharp-logo {
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+	
+	.slam-logo {
+		position: absolute;
+		padding: 10px;
+		top: 0;
+		right: 0;
+	}
+	
+}
+
+.site-footer {
+	border-top: none;
+}
+
+
+
 .svgholder {
 	text-align: center;
 	min-height: 100px;

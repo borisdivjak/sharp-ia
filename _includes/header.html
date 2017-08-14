@@ -1,8 +1,11 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+		<div class="sharp-logo">
+			<img src="assets/images/sharp-logo.gif" width="82" height="82">
+		</div>
+		<div class="slam-logo">
+			<img src="assets/images/slam-logo.gif" width="60" height="40">
+		</div>
   </div>
 </header>
