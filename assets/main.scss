@@ -27,10 +27,10 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    650px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-palm:          450px !default;
+$on-laptop:        600px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -79,7 +79,7 @@ h1 {
 	
 	.slam-logo {
 		position: absolute;
-		padding: 10px;
+		padding: 15px;
 		top: 0;
 		right: 0;
 	}
@@ -95,6 +95,11 @@ h1 {
 	min-height: 100px;
 }
 
+
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 .home-wrapper {
 	text-align: center;
