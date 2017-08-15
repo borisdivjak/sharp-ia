@@ -7,7 +7,8 @@ $(function () {
 
 	// Link directly to google slides (make sure link to presentation is open to everyone) using the following format:
 	// https:\/\/docs.google.com/presentation/d/<PRESENTATION_ID>/export/<FORMAT>?pageid=<PAGE_ID>
-	$('.svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1iZeU-UGoDyJSDpJ5Za7PDcPkp99XkUl9bxiN4SEx8kA/export/svg?pageid=g24d4306262_0_12', onLoad: loadDone });	
+	$('.svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1aoYC6LcCzFdC8bTmii1Ciz_QFxmwXov24x7Z9dphnaI/export/svg?pageid=g24d4306262_0_12', onLoad: loadDone });	
+//	$('.svgholder').svg({loadURL: 'https://docs.google.com/presentation/d/1iZeU-UGoDyJSDpJ5Za7PDcPkp99XkUl9bxiN4SEx8kA/export/svg?pageid=g24d4306262_0_12', onLoad: loadDone });	
 
 	$(window).on('resize', function() {
 		$('.svgholder svg').attr('width', $('.svgholder').width());
