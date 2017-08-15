@@ -57,9 +57,14 @@ function loadDone(svg, error) {
 
 	// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
+		e.preventDefault();
 		$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
 		$('body').css('overflow', 'inherit'); 
 		$('.modal-background, .modal').css('display', 'none');
 		$('.modal-content').html('');
+	});
+	// this is to prevent clicks on anything other than background closing the modal
+	$('.modal').on('click', function(e) {
+		e.stopPropagation();
 	});
 }
