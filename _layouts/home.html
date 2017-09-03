@@ -17,7 +17,7 @@
 	      <div class="wrapper home-wrapper">
 					<h2>{{ page.activities-title }}</h2>
 					{% for item in page.activities %}
-					<a class="activity-item home-item" href="#">
+					<a class="activity-item home-item" href="{{ item.link }}">
 						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
 						<div class="home-item-title">{{ item.title }}</div>
 					</a>
@@ -28,7 +28,7 @@
 	      <div class="wrapper home-wrapper">
 					<h2>{{ page.outcomes-title }}</h2>
 					{% for item in page.outcomes %}
-					<a class="outcomes-item home-item" href="#">
+					<a class="outcomes-item home-item" href="{{ item.link }}">
 						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
 						<div class="home-item-title">{{ item.title }}</div>
 					</a>

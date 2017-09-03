@@ -13,14 +13,14 @@ $(function () {
 	});
 	
 	// open modal and load content from html
-	$('svg a').on('click', function(e) {
+	$('a.home-item').on('click', function(e) {
 		e.preventDefault();
 		$('body').css('overflow', 'hidden'); // stop scrolling of main content when in modal mode
 		$('.modal-background').css('display', 'block');
 		$('.modal').css('display', 'block'); 
 
 		// note - xlink:href works for links from google slides
-		$('.modal-content').load( $(this).attr('xlink:href').slice(1) + '.html', function() {
+		$('.modal-content').load( $(this).attr('href') + '.html', function() {
 			// on load complete
 			$(window).resize(); // call resize to resize video iframes
 			$('.modal-background').css('-webkit-overflow-scrolling', 'touch'); // need to call this dynamically otherwise doesn't work properly on iPhone
