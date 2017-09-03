@@ -8,8 +8,28 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper home-wrapper">
+			<section class="intro">
+	      <div class="wrapper home-wrapper">
         {{ content }}
+	      </div>
+			</section>
+			<section class="activities">
+	      <div class="wrapper home-wrapper">
+					<h2>{{ page.activities-title }}</h2>
+					{% for item in page.activities %}
+					<div class="activity-item item">{{ item.title }}</div>
+					{% endfor %}
+	      </div>
+			</section>
+			<section class="outcomes">
+	      <div class="wrapper home-wrapper">
+					<h2>{{ page.outcomes-title }}</h2>
+					{% for item in page.outcomes %}
+					<div class="activity-item item">{{ item.title }}</div>
+					{% endfor %}
+	      </div>
+			</section>
+
       </div>
     </main>
 
