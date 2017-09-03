@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="home">
 
     {% include header.html %}
 
@@ -17,7 +17,10 @@
 	      <div class="wrapper home-wrapper">
 					<h2>{{ page.activities-title }}</h2>
 					{% for item in page.activities %}
-					<div class="activity-item item">{{ item.title }}</div>
+					<a class="activity-item home-item" href="#">
+						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
+						<div class="home-item-title">{{ item.title }}</div>
+					</a>
 					{% endfor %}
 	      </div>
 			</section>
@@ -25,7 +28,10 @@
 	      <div class="wrapper home-wrapper">
 					<h2>{{ page.outcomes-title }}</h2>
 					{% for item in page.outcomes %}
-					<div class="activity-item item">{{ item.title }}</div>
+					<a class="outcomes-item home-item" href="#">
+						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
+						<div class="home-item-title">{{ item.title }}</div>
+					</a>
 					{% endfor %}
 	      </div>
 			</section>

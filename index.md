@@ -3,33 +3,34 @@ activities-title: Activities and outputs
 activities:
 - title:  Partnerships
   link:   partnerships
-  icon:   partnerships.gif
+  icon:   assets/images/icon-partnerships.png
 - title:  Safe environment
   link:   safe-environment
-  icon:   partnerships.gif
+  icon:   assets/images/icon-safe-environment.png
 - title:  Local setting
   link:   local-setting
-  icon:   partnerships.gif
+  icon:   assets/images/icon-local-setting.png
 - title:  Assessments
   link:   assessments
-  icon:   partnerships.gif
+  icon:   assets/images/icon-assessments.png
 - title:  Interventions
   link:   interventions
-  icon:   partnerships.gif
+  icon:   assets/images/icon-interventions.png
 - title:  Research and innovation
   link:   research-innovation
-  icon:   partnerships.gif
+  icon:   assets/images/icon-research-innovation.png
 - title:  Right support
   link:   right-support
-  icon:   partnerships.gif
+  icon:   assets/images/icon-right-support.png
+
 outcomes-title: Outcomes and impact
 outcomes:
 - title:  Reduced cost to services
   link:   reduced-cost
-  icon:   partnerships.gif
+  icon:   assets/images/icon-reduced-cost.png
 - title:  Increased social inclusion and well-being 
   link:   social-inclusion
-  icon:   partnerships.gif
+  icon:   assets/images/icon-social-inclusion.png
 ---
 
 # SHARP impact assessment
