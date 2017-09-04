@@ -62,8 +62,50 @@ $gutter-width:		 20px;
 h1 {
 	font-size: $base-font-size * 1.7;
 	font-weight: 600;
-	line-height: 1.2em
+	line-height: 1.2em;
+	text-align: center;
 }
+
+h2 {
+	font-size: $base-font-size;
+	font-weight: 600;
+	line-height: $base-line-height;
+}
+
+hr {
+	border: none;
+	border-top: 1px dotted black;
+	margin-bottom: 30px;
+}
+
+
+// GRID AND COLUMNS 
+
+
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.col-6 {
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	padding: $gutter-width / 2;
+}
+
+.row {
+	margin: 0 -$gutter-width/2;
+}
+
+
+.col-6 p {
+	font-size: $base-font-size * 0.85;
+}
+
+
+// MAIN ELEMENTS
 
 .site-header {
 	border-top: none;
@@ -96,26 +138,6 @@ h1 {
 }
 
 
-.wrapper {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-// COLUMNS
-
-.col-6 {
-	width: 50%;
-	box-sizing: border-box;
-	float: left;
-	padding: $gutter-width / 2;
-}
-
-.row {
-	margin: 0 -$gutter-width/2;
-}
-
-
-
 
 // DIFFERENT STYLES HOME vs SUBPAGE
 
@@ -138,6 +160,8 @@ body.subpage-green {
 }
 
 
+
+
 // HOME PAGE stuff
 
 .home-wrapper {
@@ -145,7 +169,7 @@ body.subpage-green {
 }
 
 .page-content {
-	padding-bottom: 0;
+	padding: 0;
 }
 
 
@@ -208,6 +232,16 @@ section.outcomes {
 }
 
 
+// SUBPAGE STUFF 
+
+.page-icon {
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+
+
 
 // OTHER 
 
@@ -251,62 +285,18 @@ table {
 }
 
 
-// MODAL
+// IFRAME tricks
 
-.modal-background {
-	position: fixed;
-	top:0;
-	left:0;
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.9);
-	z-index: 1;	
-	overflow: auto;
-	display: none;
-}
-
-
-.modal {
+/* video embed */
+iframe {
 	position: relative;
-	margin: 40px auto;
-	width: 760px;
-	min-height: 80%;
-	background: $grey-color-light;
-	margin-top: 50px;
-	padding: 20px;
-	display: none;
-	
-	
+	width: 100%;
+	height: 427px;
+
 	@include media-query($on-laptop) {
-		width: $on-palm - 40px;
-		margin-top: 20px;
+		height: 315px;
 	}	
 	@include media-query($on-palm) {
-		box-sizing: border-box;
-		margin: 0;
-		border: 10px solid white;
-		width: 100%;
-	}	
-
-
-	.close-modal {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-	
-	
-	/* video embed */
-	iframe {
-		position: relative;
-		width: 100%;
-		height: 427px;
-
-		@include media-query($on-laptop) {
-			height: 315px;
-		}	
-		@include media-query($on-palm) {
-			height: 21	0px;
-		}
+		height: 21	0px;
 	}
 }

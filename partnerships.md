@@ -1,3 +1,6 @@
+---
+icon: assets/images/icon-partnerships.png
+---
 # Partnerships
 
 One of the needs identified by staff and workers of Lambeth in the feasibility study was the need 
