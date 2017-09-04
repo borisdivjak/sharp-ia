@@ -13,7 +13,7 @@ $(function () {
 	});
 	
 
-		// close modal
+	// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
 		e.preventDefault();
 		if ('pushState' in history) history.pushState('', document.title, window.location.pathname + window.location.search);
