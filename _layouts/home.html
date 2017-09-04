@@ -7,57 +7,22 @@
 
 		<header class="site-header" role="banner">
 		  <div class="wrapper">
-				<div class="sharp-logo">
-					<img src="assets/images/sharp-logo.gif" width="82" height="82">
-				</div>
+				<a class="home-link" href="/">
+					<div class="sharp-logo">
+						<img src="assets/images/sharp-logo.gif" width="82" height="82">
+					</div>
+				  <h1 class="site-header-title">{{ site.title }}</h1>
+				</a>
+				
 				<div class="slam-logo">
 					<img src="assets/images/slam-logo.gif" width="60" height="40">
 				</div>
 		  </div>
 		  
-		  <h1 class="site-header-title">{{ site.title }}</h1>
 		</header>
 
-    <main id="main" class="page-content" aria-label="Content">
-			<section class="intro">
-	      <div class="wrapper home-wrapper">
-        {{ content }}
-	      </div>
-			</section>
-			<section class="activities">
-	      <div class="wrapper home-wrapper">
-					<h2>{{ page.activities-title }}</h2>
-					{% for item in page.activities %}
-					<a class="activity-item home-item" href="{{ item.link }}">
-						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
-						<div class="home-item-title">{{ item.title }}</div>
-					</a>
-					{% endfor %}
-	      </div>
-			</section>
-			<section class="outcomes">
-	      <div class="wrapper home-wrapper">
-					<h2>{{ page.outcomes-title }}</h2>
-					{% for item in page.outcomes %}
-					<a class="outcomes-item home-item" href="{{ item.link }}">
-						<div class="home-item-icon"><img src="{{ item.icon }}" /></div>
-						<div class="home-item-title">{{ item.title }}</div>
-					</a>
-					{% endfor %}
-	      </div>
-			</section>
-
-      </div>
-    </main>
-
-
-
-		<div class="modal-background">
-			<div class="modal">
-				<div class="close-modal"><a href="/">Close</a></div>
-				<div class="modal-content"></div>
-			</div>
-		</div>
+    <main class="main page-content" aria-label="Content">
+	  </main>
 
     {% include footer.html %}
 
