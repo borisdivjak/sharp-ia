@@ -34,7 +34,6 @@ $(function () {
 	$.sammy(function() {
 
 		this.get('/', function() {
-//			window.location.href = '';
 			$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
 			$('body').css('overflow', 'inherit'); 
 			$('.modal-background, .modal').css('display', 'none');
