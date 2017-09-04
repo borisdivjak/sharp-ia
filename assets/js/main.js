@@ -12,15 +12,6 @@ $(function () {
 		$('iframe').css('height', iframeHeight);
 	});
 	
-
-	// back to home - override default and remove hash sign
-	$('.home-link').on('click', function(e) {
-		e.preventDefault();
-		if ('pushState' in history) history.pushState('', document.title, window.location.pathname + window.location.search);
-		else window.location.href = '/';
-	});
-
-
 	$(window).resize();	
 	
 	
@@ -28,11 +19,14 @@ $(function () {
 	$.sammy(function() {
 
 		this.get('/', function() {
-			$('main.page-content').load( 'home-content.html', function() {});
+			$('main.page-content').load( 'home-content.html', function() {
+				$('body').attr('class', 'home');
+			});
 		});
 
 	  this.get('#:page_title', function() {
 			$('main.page-content').load( this.params['page_title'] + '.html', function() {
+				$('body').attr('class', $('.subpage-main').data('body-class'));
 				$(window).scrollTop(0);
 				$(window).resize(); // on load completecall resize to resize video iframes
 			} ); 

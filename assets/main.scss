@@ -32,6 +32,8 @@ $content-width:    960px !default;
 $on-palm:          450px !default;
 $on-laptop:        600px !default;
 
+$gutter-width:		 20px;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -67,6 +69,8 @@ h1 {
 	border-top: none;
 	border-bottom: none;
 	text-align: center;
+	height: 200px;
+	background: url('images/header-triangle.png') center bottom/100% 225px no-repeat;
 	
 	.wrapper {
 		position: relative;
@@ -97,8 +101,41 @@ h1 {
 	padding-right: 15px;
 }
 
+// COLUMNS
+
+.col-6 {
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	padding: $gutter-width / 2;
+}
+
+.row {
+	margin: 0 -$gutter-width/2;
+}
 
 
+
+
+// DIFFERENT STYLES HOME vs SUBPAGE
+
+
+body.home {
+	background: white;
+}
+
+body.subpage {
+	background: #ebf5fc;
+	
+	.site-header-title {
+		font-size: $base-font-size;
+	}
+}
+
+body.subpage-green {
+	background: #91d631;	
+	color: white;
+}
 
 
 // HOME PAGE stuff
