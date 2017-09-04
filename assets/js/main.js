@@ -12,33 +12,47 @@ $(function () {
 		$('.modal iframe').css('height', iframeHeight);
 	});
 	
-	// open modal and load content from html
-	$('a.home-item').on('click', function(e) {
-		e.preventDefault();
-		$('body').css('overflow', 'hidden'); // stop scrolling of main content when in modal mode
-		$('.modal-background').css('display', 'block');
-		$('.modal').css('display', 'block'); 
 
-		// note - xlink:href works for links from google slides
-		$('.modal-content').load( $(this).attr('href') + '.html', function() {
-			// on load complete
-			$(window).resize(); // call resize to resize video iframes
-			$('.modal-background').css('-webkit-overflow-scrolling', 'touch'); // need to call this dynamically otherwise doesn't work properly on iPhone
-		} ); 
-	});
-
-	// close modal
+		// close modal
 	$('.modal .close-modal, .modal-background').on('click', function(e) {
 		e.preventDefault();
-		$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
-		$('body').css('overflow', 'inherit'); 
-		$('.modal-background, .modal').css('display', 'none');
-		$('.modal-content').html('');
+		if ('pushState' in history) history.pushState('', document.title, window.location.pathname + window.location.search);
+		else window.location.href = '/';
 	});
+	
 	// this is to prevent clicks on anything other than background closing the modal
 	$('.modal').on('click', function(e) {
 		e.stopPropagation();
 	});
 
-	$(window).resize();
+
+
+	$(window).resize();	
+	
+	
+	// ROUTING: sammy is the routing function	
+	$.sammy(function() {
+
+		this.get('/', function() {
+//			window.location.href = '';
+			$('.modal-background').css('-webkit-overflow-scrolling', 'auto');
+			$('body').css('overflow', 'inherit'); 
+			$('.modal-background, .modal').css('display', 'none');
+			$('.modal-content').html('');
+		});
+
+	  this.get('#:page_title', function() {
+			$('body').css('overflow', 'hidden'); // stop scrolling of main content when in modal mode
+			$('.modal-background').css('display', 'block');
+			$('.modal').css('display', 'block'); 
+	
+			// load content in modal
+			$('.modal-content').load( this.params['page_title'] + '.html', function() {
+				// on load complete
+				$(window).resize(); // call resize to resize video iframes
+				$('.modal-background').css('-webkit-overflow-scrolling', 'touch'); // need to call this dynamically otherwise doesn't work properly on iPhone
+			} ); 
+	  });
+
+	}).run();
 }); 
