@@ -58,6 +58,7 @@ $on-laptop:        600px !default;
 
 
 h1 {
+	font-size: $base-font-size * 1.7;
 	font-weight: 600;
 	line-height: 1.2em
 }
@@ -65,6 +66,7 @@ h1 {
 .site-header {
 	border-top: none;
 	border-bottom: none;
+	text-align: center;
 	
 	.wrapper {
 		position: relative;
@@ -73,7 +75,6 @@ h1 {
 	.sharp-logo {
 		box-sizing: border-box;
 		width: 100%;
-		text-align: center;
 		padding: 10px;
 	}
 	
@@ -91,16 +92,13 @@ h1 {
 }
 
 
-.svgholder {
-	min-height: 100px;
-	margin-top: 50px;
-}
-
-
 .wrapper {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
+
+
 
 
 // HOME PAGE stuff

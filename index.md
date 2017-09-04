@@ -33,8 +33,6 @@ outcomes:
   icon:   assets/images/icon-social-inclusion.png
 ---
 
-# SHARP impact assessment
-
 SHARP is a specialist team of Mental Health Professionals focused on recovery and well-being 
 for people using mental health services in Lambeth. 
 
