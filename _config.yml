@@ -2,3 +2,4 @@ theme: minima
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
 
 title: 'SHARP impact assessment'
+baseurl: /sharp-ia
