@@ -203,7 +203,7 @@ blockquote {
 	border-top: none;
 	border-bottom: none;
 	text-align: center;
-	height: 200px;
+	height: 175px;
 	
 	.wrapper {
 		position: relative;
@@ -266,7 +266,11 @@ body.subpage {
 	}
 
 	.site-header {
-		background: #ebf5fc url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+		background: #ebf5fc url('images/header-triangle.png') center bottom/100% 200px no-repeat;
+
+		@include media-query($on-palm) {
+			background-size: 1000px 200px;
+		}	
 	}
 	
 	.main.page-content, .site-footer {
@@ -277,7 +281,7 @@ body.subpage {
 		color: white;
 		
 		.site-header {
-			background: $brand-color-2 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+			background-color: $brand-color-2;
 		}
 		
 		.main.page-content, .site-footer {
@@ -334,7 +338,10 @@ section.outcomes {
 	background: $brand-color-2 url('images/white-triangle.png') center top/100% 100px no-repeat;
 	padding-top: 110px;
 	margin-top: -20px;
-	
+
+	@include media-query($on-palm) {
+		background-size: 1000px 100px;
+	}	
 }
 
 .home-item {
