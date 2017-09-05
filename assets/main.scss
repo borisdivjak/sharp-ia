@@ -192,7 +192,6 @@ blockquote {
 	border-bottom: none;
 	text-align: center;
 	height: 200px;
-	background: url('images/header-triangle.png') center bottom/100% 225px no-repeat;
 	
 	.wrapper {
 		position: relative;
@@ -222,23 +221,31 @@ blockquote {
 // DIFFERENT STYLES HOME vs SUBPAGE
 
 
-body.home {
-	background: white;
-}
-
 body.subpage {
-	background: #ebf5fc;
-	
 	.site-header-title {
 		font-size: $base-font-size;
 	}
-}
 
-body.subpage-green {
-	background: #91d631;	
-	color: white;
+	.site-header {
+		background: #ebf5fc url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+	}
+	
+	.main.page-content, .site-footer {
+		background: #ebf5fc;		
+	}
+	
+	&.subpage-green {
+		color: white;
+		
+		.site-header {
+			background: #91d631 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+		}
+		
+		.main.page-content, .site-footer {
+			background: #91d631;		
+		}
+	}
 }
-
 
 
 
