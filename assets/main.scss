@@ -27,7 +27,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    960px !default;
+$content-width:    1000px !default;
 
 $on-mobile:        450px !default;
 $on-palm:          650px !default;
@@ -89,8 +89,8 @@ hr {
 	border-top: 	 $horizontal-line;
 	border-bottom: $horizontal-line;
 	padding-top: 15px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 blockquote {
@@ -163,7 +163,7 @@ blockquote {
 	width: 50%;
 	box-sizing: border-box;
 	float: left;
-	padding: $gutter-width / 2;
+	padding: 0 ($gutter-width / 2);
 	
 	@include media-query($on-palm) {
 		width: 100%;
@@ -222,6 +222,16 @@ blockquote {
 // DIFFERENT STYLES HOME vs SUBPAGE
 
 
+body.home {
+	.site-header {
+		height: auto;
+		
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+}
+
 body.subpage {
 	.site-header-title {
 		font-size: $base-font-size;
@@ -252,7 +262,7 @@ body.subpage {
 
 // HOME PAGE stuff
 
-.home-wrapper {
+.activities, .outcomes {
 	text-align: center;
 }
 
