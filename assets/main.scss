@@ -20,8 +20,8 @@ $spacing-unit:     30px !default;
 $text-color:       #333 !default;
 $background-color: #ffffff !default;
 $brand-color:      #55BCEB !default;  // link color !
-$brand-color-2:    #913487 !default;
-$brand-color-3:    #90d03b !default;  // green
+$brand-color-2:    #90d03b !default;  // green
+$brand-color-3:    #333333 !default;  // dark grey
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -67,18 +67,28 @@ $horizontal-line:	 1px dotted black;
 // TYPOGRAPHY
 
 
+
+h1, h2, h3 {
+	font-weight: 600;
+}
+
 h1 {
 	@include relative-font-size(1.7);
-	font-weight: 600;
 	line-height: 1.2em;
 	text-align: center;
 }
 
 h2 {
+	@include relative-font-size(1.35);
+	line-height: 1.2em;
+	text-align: center;
+}
+
+h3 {
 	font-size: $base-font-size;
-	font-weight: 600;
 	line-height: $base-line-height;
 }
+
 
 hr {
 	border: none;
@@ -212,6 +222,10 @@ blockquote {
 		right: 0;
 	}
 	
+	h1 {
+		color: $brand-color-3;
+	}
+	
 }
 
 .site-footer {
@@ -244,7 +258,6 @@ body.home {
 			margin-bottom: 0;
 		}
 	}
-	
 }
 
 body.subpage {
@@ -264,11 +277,11 @@ body.subpage {
 		color: white;
 		
 		.site-header {
-			background: $brand-color-3 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+			background: $brand-color-2 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
 		}
 		
 		.main.page-content, .site-footer {
-			background: $brand-color-3;		
+			background: $brand-color-2;		
 		}
 
 	}
@@ -293,6 +306,19 @@ body.home, body.subpage-green {
 
 .activities, .outcomes {
 	text-align: center;
+	
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}	
+}
+
+.activities h2 {
+	color: $brand-color;
+}
+
+.outcomes h2 {
+	color: white;
 }
 
 .page-content {
@@ -301,11 +327,11 @@ body.home, body.subpage-green {
 
 
 section.outcomes, .home .site-footer {
-	background: $brand-color-3;
+	background: $brand-color-2;
 }
 
 section.outcomes {
-	background: $brand-color-3 url('images/white-triangle.png') center top/100% 100px no-repeat;
+	background: $brand-color-2 url('images/white-triangle.png') center top/100% 100px no-repeat;
 	padding-top: 110px;
 	margin-top: -20px;
 	

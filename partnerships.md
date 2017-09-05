@@ -25,7 +25,7 @@ institutions.
 
 {% capture column1 %}
 
-## Collaboration with the Comedy School, Ritzy Cinema and Recovery College 
+### Collaboration with the Comedy School, Ritzy Cinema and Recovery College 
 
 An example of this has been our recent partnership work and collaboration with the Comedy School, 
 Ritzy cinema and recovery college to co-produce an annual event in honor of world mental health day. 
