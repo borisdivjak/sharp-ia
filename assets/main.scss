@@ -4,7 +4,7 @@
 
 // import google font
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,600,600i');
 
 
 // Define defaults for each variable.
@@ -21,6 +21,7 @@ $text-color:       #333 !default;
 $background-color: #ffffff !default;
 $brand-color:      #55BCEB !default;  // link color !
 $brand-color-2:    #913487 !default;
+$brand-color-3:    #90d03b !default;  // green
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -215,6 +216,19 @@ blockquote {
 
 .site-footer {
 	border-top: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	.footer-content {
+		text-align: center;
+		padding-top: 10px;
+		border-top: $horizontal-line;
+		@include relative-font-size(.75);
+	}
+	
+	a {
+		font-weight: 500;
+	}
 }
 
 
@@ -230,6 +244,7 @@ body.home {
 			margin-bottom: 0;
 		}
 	}
+	
 }
 
 body.subpage {
@@ -249,16 +264,30 @@ body.subpage {
 		color: white;
 		
 		.site-header {
-			background: #91d631 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
+			background: $brand-color-3 url('images/header-triangle.png') center bottom/100% 225px no-repeat;
 		}
 		
 		.main.page-content, .site-footer {
-			background: #91d631;		
+			background: $brand-color-3;		
 		}
+
 	}
 }
 
 
+body.home, body.subpage-green {
+	.site-footer {
+		color: white;
+	
+		.footer-content {
+			border-top-color: white;
+			
+			a {
+				color: white;
+			}
+		}
+	}
+}
 
 // HOME PAGE stuff
 
@@ -272,11 +301,11 @@ body.subpage {
 
 
 section.outcomes, .home .site-footer {
-	background: #90d03b;
+	background: $brand-color-3;
 }
 
 section.outcomes {
-	background: #90d03b url('images/white-triangle.png') center top/100% 100px no-repeat;
+	background: $brand-color-3 url('images/white-triangle.png') center top/100% 100px no-repeat;
 	padding-top: 110px;
 	margin-top: -20px;
 	
