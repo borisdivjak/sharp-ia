@@ -36,9 +36,11 @@ The series of improvisation workshops and events have had a major impact on peop
 > "Impro bought out a side of me that’s been hidden my entire life. In the course, and in impro generally 
 > taking risk is positive, constructive and life affirming. I can honestly say that, for me, it’s 
 > been a life changer and now I’m such an enthusiast!"
-
+> - Person who has used SHARP services
+	
 > "when I feel anxious or in a low mood, I say to myself ‘okay, let’s go into impro mode’ 
 > and I just impro my way through it! There’s nothing to fear, just go for it!"
+> - Person who has used SHARP services
 
 {% endcapture %}
 

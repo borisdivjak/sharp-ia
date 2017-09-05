@@ -122,6 +122,23 @@ blockquote {
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
+blockquote {
+	p {
+		margin-bottom: 5px;
+	}
+
+	ul {
+		font-size: $base-font-size * 0.75;
+		list-style: none;
+		margin-left: 0;
+		font-style: normal;
+		
+		li::before {
+			content: "—  ";
+		}
+	}
+}
+
 // GRID AND COLUMNS 
 
 
