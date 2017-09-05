@@ -65,7 +65,7 @@ $horizontal-line:	 1px dotted black;
 
 
 h1 {
-	font-size: $base-font-size * 1.7;
+	@include relative-font-size(1.7);
 	font-weight: 600;
 	line-height: 1.2em;
 	text-align: center;
@@ -137,7 +137,7 @@ blockquote {
 	}
 
 	ul {
-		font-size: $base-font-size * 0.75;
+		@include relative-font-size(.75);
 		list-style: none;
 		margin-left: 0;
 		font-style: normal;
@@ -176,7 +176,7 @@ blockquote {
 
 
 .col-6 p {
-	font-size: $base-font-size * 0.85;
+	@include relative-font-size(.85);
 }
 
 
