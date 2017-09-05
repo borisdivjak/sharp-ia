@@ -38,5 +38,5 @@ outcomes:
 SHARP is a specialist team of Mental Health Professionals focused on recovery and well-being 
 for people using mental health services in Lambeth. 
 
-Our service has been shown to [produce](#/temp) positive therapeutic outcomes and high levels of satisfaction. 
+Our service has been shown to produce positive therapeutic outcomes and high levels of satisfaction. 
 The following document presents the evidence of the impact of our activities in detail. 
