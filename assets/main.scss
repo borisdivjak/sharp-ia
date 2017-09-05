@@ -4,7 +4,7 @@
 
 // import google font
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i');
 
 
 // Define defaults for each variable.
@@ -226,6 +226,19 @@ blockquote {
 		color: $brand-color-3;
 	}
 	
+	// fun hover stuff
+	
+	.sharp-logo img {
+		transition: .2s ease-out;
+	}
+	
+	a.home-link:hover {
+		text-decoration: none;
+		
+		.sharp-logo img {
+			transform: scale(1.1) ; 
+		}	
+	}
 }
 
 .site-footer {
@@ -352,8 +365,9 @@ section.outcomes {
 	height: 180px;
 	background: #f2f9fe;
 	border-radius: 90px;
-	line-height: 1.3em;
+	line-height: 1.2em;
 	margin: 0 10px 15px;
+	font-weight: 500;
 	
 	.home-item-icon img {
 		padding-top: 20px;
@@ -365,7 +379,7 @@ section.outcomes {
 		padding: 0 20px;
 	}
 
-		&::after {
+	&::after {
 		content:' ';
 		position: absolute;
 		bottom: 20px;
@@ -404,6 +418,26 @@ section.outcomes {
 		}
 	}
 
+
+	// add some fun hover stuff!
+	
+	
+	&, .home-item-icon, &::after {
+	  transition: .2s ease-out;
+	}
+
+	&:hover {
+		text-decoration: none !important;
+    transform: scale(1.2);
+		
+		.home-item-icon {
+			transform: scale(0.9) translate(0, -5px);
+		}
+		
+		&::after {
+			transform: translate(0, 5px);
+		}
+	}
 }
 
 
