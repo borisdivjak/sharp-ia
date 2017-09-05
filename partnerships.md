@@ -3,18 +3,24 @@ icon: assets/images/icon-partnerships.png
 ---
 # Partnerships
 
+
+{% capture content %}
 One of the needs identified by staff and workers of Lambeth in the feasibility study was the need 
 for SHARP to be able to provide connections within the community and help bridge the gap between 
 services and unmet need. One of the ways in which SHARP has been successful in addressing this 
 is through collaboration, co-production and the effective use of partnership work. 
+{% endcapture %}
 
-<!--  ![SHARP partners](https://docs.google.com/presentation/d/18F1uROLUDpn3o6knNVYE-fvmTL_s59gNh_430cFEh8A/export/svg?pageid=p "SHARP partners") -->
+{% include section-lead-text.html %}
+
+
+
+<!--  ![SHARP partners](https://docs.google.com/presentation/d/18F1uROLUDpn3o6knNVYE-fvmTL_s59gNh_430cFEh8A/export/svg?pageid=p "SHARP partners") 
 
 We have successfully partnered with organisations including voluntary sector, businesses and learning 
 institutions. 
 
-
-<hr />
+-->
 
 
 {% capture column1 %}

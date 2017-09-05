@@ -34,6 +34,8 @@ $on-laptop:        600px !default;
 
 $gutter-width:		 20px;
 
+$horizontal-line:	 1px dotted black;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -77,10 +79,17 @@ h2 {
 
 hr {
 	border: none;
-	border-top: 1px dotted black;
+	border-top: $horizontal-line;
 	margin-bottom: 30px;
 }
 
+.lead-text {
+	border-top: 	 $horizontal-line;
+	border-bottom: $horizontal-line;
+	padding-top: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
 
 blockquote {
 	border: none;
