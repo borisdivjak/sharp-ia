@@ -30,8 +30,9 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $content-width:    960px !default;
 
 $on-mobile:        450px !default;
-$on-palm:          600px !default;
-$on-laptop:        768px !default;
+$on-palm:          650px !default;
+$on-laptop:        845px !default;
+$on-desktop:			 $on-laptop;
 
 $gutter-width:		 20px;
 
@@ -282,6 +283,12 @@ section.outcomes {
 	line-height: 1.3em;
 	margin: 0 10px 15px;
 	
+	@include media-query($on-palm) {
+		width: 160px;
+		height: 160px;
+		margin: 0 5px 10px;
+	}
+	
 	.home-item-icon img{
 		padding-top: 20px;
 		width: 70px;
@@ -292,7 +299,7 @@ section.outcomes {
 		padding: 0 20px;
 	}
 
-	&::after {
+		&::after {
 		content:' ';
 		position: absolute;
 		bottom: 20px;
@@ -316,6 +323,17 @@ section.outcomes {
 		background: url('images/more-green.png') center/20px 20px;
 	}
 
+}
+
+
+// hack to break circles into nicer pattern on palm-size screens
+
+.break-2 {
+	display: none;
+	
+	@include media-query($on-laptop) {
+		display: block;
+	}	
 }
 
 
