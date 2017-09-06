@@ -281,6 +281,8 @@ body.home {
 }
 
 body.subpage {
+	color: darken($brand-color-blue, 10%);
+	
 	.site-header-title {
 		font-size: $base-font-size;
 	}
