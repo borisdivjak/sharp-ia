@@ -57,11 +57,7 @@ $horizontal-line:	 1px dotted black;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+@import "base";
 
 
 // TYPOGRAPHY
@@ -226,7 +222,10 @@ blockquote {
 		color: $brand-color-3;
 	}
 	
-	// fun hover stuff
+}
+
+// fun hover stuff
+.hover-animation .site-header {
 	
 	.sharp-logo img {
 		transition: .2s ease-out;
@@ -417,11 +416,10 @@ section.outcomes {
 			}
 		}
 	}
+}
 
-
-	// add some fun hover stuff!
-	
-	
+// add some fun hover stuff!
+.hover-animation .home-item {	
 	&, .home-item-icon, &::after {
 	  transition: .2s ease-out;
 	}

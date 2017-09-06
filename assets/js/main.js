@@ -1,4 +1,10 @@
 $(function () {
+	var bodyclass = '';
+
+	if (!Modernizr.touchevents) {
+		bodyclass = 'hover-animation ';
+	}
+
     // Disable caching of AJAX responses
 	$.ajaxSetup ({ cache: false });
 
@@ -13,20 +19,20 @@ $(function () {
 	});
 	
 	$(window).resize();	
-	
+			
 	
 	// ROUTING: sammy is the routing function	
 	$.sammy(function() {
 
 		this.get('/', function() {
 			$('main.page-content').load( 'home-content.html', function() {
-				$('body').attr('class', 'home');
+				$('body').attr('class', bodyclass + 'home');
 			});
 		});
 
 	  this.get('#:page_title', function() {
 			$('main.page-content').load( this.params['page_title'] + '.html', function() {
-				$('body').attr('class', $('.subpage-main').data('body-class'));
+				$('body').attr('class', bodyclass + $('.subpage-main').data('body-class'));
 				$(window).scrollTop(0);
 				$(window).resize(); // on load completecall resize to resize video iframes
 			} ); 
