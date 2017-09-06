@@ -261,6 +261,9 @@ blockquote {
 
 .page-nav {
 	text-align: center;
+	border-top: $horizontal-line;
+	margin-top: $spacing-unit;
+	padding-top: $spacing-unit /2;
 }
 
 .site-footer {
