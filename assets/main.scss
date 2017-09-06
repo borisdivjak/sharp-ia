@@ -4,22 +4,26 @@
 
 // import google font
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i');
+
 
 
 // Define defaults for each variable.
 
 $base-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   17px !default;
+$base-font-size:   19px !default;
 $base-font-weight: 300 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$smaller-font-size:  ceil($base-font-size * 0.84); // e.g. column content
+$smallest-font-size: ceil($base-font-size * 0.75); // e.g. footer
+$small-font-size:  $smaller-font-size;
+$base-line-height: 1.5em !default;
+$smaller-line-height: $base-line-height * 0.8 !default;
 
 $spacing-unit:     30px !default;
 
 $text-color:       #333 !default;
 $background-color: #ffffff !default;
-$brand-color-blue: 				#55BCEB !default;  // blue
+$brand-color-blue: 				#40a7e7 !default;  // blue
 $brand-color-green:    		#90d03b !default;  // green
 $brand-color-dark-grey: 	#333333 !default;  // dark grey
 $brand-color-light-blue:	#ebf5fc !default;  // light blue
@@ -30,16 +34,17 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    1000px !default;
+$content-width:    1040px !default;
 
 $on-mobile:        450px !default;
 $on-palm:          650px !default;
 $on-laptop:        845px !default;
 $on-desktop:			 $on-laptop;
 
-$gutter-width:		 20px;
+$gutter-width:		 30px;
 
 $horizontal-line:	 1px dotted black;
+
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -58,8 +63,11 @@ $horizontal-line:	 1px dotted black;
   font-size: ceil($base-font-size * $ratio);
 }
 
+
 // Import partials.
 @import "base";
+
+
 
 
 // TYPOGRAPHY
@@ -67,18 +75,18 @@ $horizontal-line:	 1px dotted black;
 
 
 h1, h2, h3 {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 h1 {
-	@include relative-font-size(1.7);
-	line-height: 1.2em;
+	@include relative-font-size(1.6);
+	line-height: $smaller-line-height;
 	text-align: center;
 }
 
 h2 {
-	@include relative-font-size(1.35);
-	line-height: 1.2em;
+	@include relative-font-size(1.3);
+	line-height: $smaller-line-height;
 	text-align: center;
 }
 
@@ -91,15 +99,20 @@ h3 {
 hr {
 	border: none;
 	border-top: $horizontal-line;
-	margin-bottom: 30px;
+	margin-bottom: $spacing-unit;
 }
 
 .lead-text {
+	font-size: ceil($base-font-size * 1.05);
 	border-top: 	 $horizontal-line;
 	border-bottom: $horizontal-line;
-	padding-top: 15px;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	padding-top: $spacing-unit / 2;;
+	margin-bottom: ceil($spacing-unit * 1.25);
+	margin-top: $spacing-unit;
+	
+	p {
+		margin-bottom: $spacing-unit / 2;
+	}
 }
 
 blockquote {
@@ -109,7 +122,6 @@ blockquote {
 	border-radius: 20px;
 	position: relative;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .05);
-	
 	
 	&::after {
 		content: "";
@@ -123,6 +135,23 @@ blockquote {
 		right: 30px;
 	  box-shadow: 6px 0 3px -3px rgba(0, 0, 0, .05);
 	}
+	
+	p {
+		margin-bottom: ceil($spacing-unit / 6);
+	  font-style: italic;
+		font-weight: 500;	
+	}
+
+	ul {
+		font-size: $smallest-font-size;
+		list-style: none;
+		margin: 0;
+		font-style: normal;
+		
+		li::before {
+			content: "—  ";
+		}
+	}	
 }
 
 .col-left blockquote::after {
@@ -141,21 +170,9 @@ blockquote {
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
-blockquote {
-	p {
-		margin-bottom: 5px;
-	}
-
-	ul {
-		@include relative-font-size(.75);
-		list-style: none;
-		margin-left: 0;
-		font-style: normal;
-		
-		li::before {
-			content: "—  ";
-		}
-	}
+.source {
+	font-size: $smallest-font-size;
+	line-height: $base-line-height;
 }
 
 // GRID AND COLUMNS 
@@ -190,7 +207,8 @@ blockquote {
 
 
 .col-6 p {
-	@include relative-font-size(.85);
+	font-size: $smaller-font-size;
+	line-height: $base-line-height;
 }
 
 
@@ -254,7 +272,7 @@ blockquote {
 		text-align: center;
 		padding-top: 10px;
 		border-top: $horizontal-line;
-		@include relative-font-size(.75);
+		font-size: $smallest-font-size;
 	}
 	
 	a {
@@ -262,6 +280,15 @@ blockquote {
 	}
 }
 
+.page-content {
+	padding: 0;
+}
+
+.subpage .page-content {
+	a {
+		text-decoration: underline;
+	}
+}
 
 
 // DIFFERENT STYLES HOME vs SUBPAGE
@@ -281,7 +308,7 @@ body.home {
 }
 
 body.subpage {
-	color: darken($brand-color-blue, 10%);
+	color: $brand-color-blue;
 	
 	.site-header-title {
 		font-size: $base-font-size;
@@ -334,7 +361,7 @@ body.home, body.subpage-green {
 	
 	h2 {
 		margin-top: 10px;
-		margin-bottom: 30px;
+		margin-bottom: $spacing-unit;
 	}	
 }
 
@@ -345,11 +372,6 @@ body.home, body.subpage-green {
 .outcomes h2 {
 	color: white;
 }
-
-.page-content {
-	padding: 0;
-}
-
 
 section.outcomes {
 	background: $brand-color-green;
@@ -373,11 +395,14 @@ section.outcomes {
 	height: 180px;
 	background: #f2f9fe;
 	border-radius: 90px;
-	line-height: 1.2em;
 	margin: 0 10px 15px;
+
+	font-size: $smaller-font-size;
+	line-height: $smaller-line-height;
 	font-weight: 500;
 	
 	.home-item-icon img {
+		margin-top: 0;
 		padding-top: 20px;
 		width: 70px;
 		height: 70px;
@@ -463,9 +488,10 @@ section.outcomes {
 
 .page-icon {
 	text-align: center;
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	margin: auto;
+	padding: 10px;
 }
 
 
@@ -478,8 +504,8 @@ table {
 	text-align: left;
 	border-spacing: 0;
 	padding: 10px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: $spacing-unit;
+	margin-bottom: $spacing-unit;
 	
 	td, th {
 		vertical-align: top;
@@ -500,7 +526,7 @@ table {
 	
 	td:first-of-type {
 		font-size: 2em;
-		font-weight: 600;
+		font-weight: 500;
 		padding-top: 0;
 		padding-right: 10px;
 
@@ -509,6 +535,28 @@ table {
 		}
 	}
 	
+}
+
+
+.stat-circle {
+	background: darken($brand-color-green, 8%);
+	height: 200px;
+	width: 200px;
+	margin: 8px auto;
+	border-radius: 100px;
+	text-align: center;
+	
+	.main-stat {
+		padding-top: 60px;
+		font-size: 2em;
+		font-weight: 500;
+	}
+	
+	.description {
+		font-size: $smaller-font-size;
+		line-height: $base-line-height * 0.9;
+		padding: 10px;
+	}
 }
 
 

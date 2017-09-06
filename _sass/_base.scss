@@ -30,13 +30,33 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-unit * 0.55;	
+}
+
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit * 0.666;
 }
 
+
+blockquote, img, iframe {
+	margin-top: 5px;
+}
+
+p img {
+	padding-bottom: 5px;
+}
+
+p + blockquote {
+	margin-top: $spacing-unit;
+}
+
+p + h2, p + h3 {
+	margin-top: $spacing-unit * 1.2;
+}
 
 
 /**
@@ -84,9 +104,6 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 }
 .hover-animation a:hover {
   color: $text-color;
