@@ -22,6 +22,7 @@ $background-color: #ffffff !default;
 $brand-color:      #55BCEB !default;  // link color !
 $brand-color-2:    #90d03b !default;  // green
 $brand-color-3:    #333333 !default;  // dark grey
+$brand-color-4:		 #ebf5fc !default;  // light blue
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -240,6 +241,10 @@ blockquote {
 	}
 }
 
+.page-nav {
+	text-align: center;
+}
+
 .site-footer {
 	border-top: none;
 	padding-top: 50px;
@@ -270,6 +275,9 @@ body.home {
 			margin-bottom: 0;
 		}
 	}
+	.site-footer, .page-nav {
+		background-color: $brand-color-2;
+	}
 }
 
 body.subpage {
@@ -285,21 +293,16 @@ body.subpage {
 		}	
 	}
 	
-	.main.page-content, .site-footer {
-		background: #ebf5fc;		
+	.main.page-content, .site-footer, .page-nav {
+		background: $brand-color-4;		
 	}
 	
 	&.subpage-green {
 		color: white;
 		
-		.site-header {
+		.site-header, .main.page-content, .site-footer, .page-nav {
 			background-color: $brand-color-2;
 		}
-		
-		.main.page-content, .site-footer {
-			background: $brand-color-2;		
-		}
-
 	}
 }
 
@@ -342,7 +345,7 @@ body.home, body.subpage-green {
 }
 
 
-section.outcomes, .home .site-footer {
+section.outcomes {
 	background: $brand-color-2;
 }
 

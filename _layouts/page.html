@@ -4,4 +4,37 @@
 	{% if page.icon %} <div class="page-icon"><img src="{{ page.icon }}" /></div> {% endif %}
 	{{ content }}
 	{{ page.section2 }}
+	
+	<div class="page-nav">
+
+		{% assign items = "" | split: "" %}
+		{% for item in site.activities %}
+		  {% assign items = items | push: item %}
+		{% endfor %}
+		{% for item in site.outcomes %}
+		  {% assign items = items | push: item %}
+		{% endfor %}
+
+		{% for item in items  %}
+				{% assign path = item.link | remove: "#" | append: ".md" %}
+		    {% if path == page.path %}
+        		{% assign prev_index = forloop.index | minus: 2 %}
+            {% if forloop.first != true %}
+            	<a href="{{ items[prev_index].link }}">
+						{% else %}
+							<a class="inactive">
+	          {% endif %}
+	          	&larr; Previous</a>
+	          	
+            {% if forloop.last != true %}
+            	<a href="{{ items[forloop.index].link }}">
+						{% else %}
+							<a class="inactive">
+	          {% endif %}
+	          	Next &rarr;</a>
+	          	
+		    {% endif %}
+		{% endfor %}
+
+	</div>
 </div>
