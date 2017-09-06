@@ -19,10 +19,11 @@ $spacing-unit:     30px !default;
 
 $text-color:       #333 !default;
 $background-color: #ffffff !default;
-$brand-color:      #55BCEB !default;  // link color !
-$brand-color-2:    #90d03b !default;  // green
-$brand-color-3:    #333333 !default;  // dark grey
-$brand-color-4:		 #ebf5fc !default;  // light blue
+$brand-color-blue: 				#55BCEB !default;  // blue
+$brand-color-green:    		#90d03b !default;  // green
+$brand-color-dark-grey: 	#333333 !default;  // dark grey
+$brand-color-light-blue:	#ebf5fc !default;  // light blue
+$brand-color:			 $brand-color-blue;	// link color !
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -129,7 +130,6 @@ blockquote {
 	border-color: transparent transparent white transparent;
 	bottom: 20px;
 	left: -20px;
-	z-index: -1;
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
@@ -220,7 +220,7 @@ blockquote {
 	}
 	
 	h1 {
-		color: $brand-color-3;
+		color: $brand-color-dark-grey;
 	}
 	
 }
@@ -276,7 +276,7 @@ body.home {
 		}
 	}
 	.site-footer, .page-nav {
-		background-color: $brand-color-2;
+		background-color: $brand-color-green;
 	}
 }
 
@@ -294,14 +294,18 @@ body.subpage {
 	}
 	
 	.main.page-content, .site-footer, .page-nav {
-		background: $brand-color-4;		
+		background: $brand-color-light-blue;		
 	}
 	
 	&.subpage-green {
 		color: white;
 		
+		blockquote {
+			color: darken($brand-color-green,10%);
+		}
+		
 		.site-header, .main.page-content, .site-footer, .page-nav {
-			background-color: $brand-color-2;
+			background-color: $brand-color-green;
 		}
 	}
 }
@@ -346,11 +350,11 @@ body.home, body.subpage-green {
 
 
 section.outcomes {
-	background: $brand-color-2;
+	background: $brand-color-green;
 }
 
 section.outcomes {
-	background: $brand-color-2 url('images/white-triangle.png') center top/100% 100px no-repeat;
+	background: $brand-color-green url('images/white-triangle.png') center top/100% 100px no-repeat;
 	padding-top: 110px;
 	margin-top: -20px;
 
