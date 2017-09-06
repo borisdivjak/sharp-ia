@@ -1,3 +1,7 @@
+---
+icon: assets/images/icon-interventions.png
+---
+
 # Interventions
 
 SHARP works to actively promote NICE guidance interventions for psychosis (Nice guidance- take context 

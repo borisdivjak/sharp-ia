@@ -1,3 +1,7 @@
+---
+icon: assets/images/icon-right-support.png
+---
+
 # Right support
 
 The core business of SHARP is offering therapeutic and psychosocial interventions to enable people 

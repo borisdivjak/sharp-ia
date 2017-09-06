@@ -1,3 +1,7 @@
+---
+icon: assets/images/icon-local-setting.png
+---
+
 # Local setting
 
 Initial feedback and results from the client questionnaires suggested that having the service 

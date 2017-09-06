@@ -1,3 +1,7 @@
+---
+icon: assets/images/icon-safe-environment.png
+---
+
 # Safe and friendly environment  
 
 SHARP values a culture of respect, creativity and professionalism. From the first encounter with 

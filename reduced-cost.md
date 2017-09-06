@@ -1,4 +1,5 @@
 ---
+icon: assets/images/icon-reduced-cost.png
 body-class: subpage-green
 ---
 
