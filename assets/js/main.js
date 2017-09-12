@@ -27,6 +27,7 @@ $(function () {
 		this.get('/', function() {
 			$('main.page-content').load( 'home-content.html', function() {
 				$('body').attr('class', bodyclass + 'home');
+				$(window).scrollTop(0);
 			});
 		});
 

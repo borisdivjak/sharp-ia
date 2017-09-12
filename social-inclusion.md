@@ -10,7 +10,7 @@ body-class: subpage-green
 SHARP plays an integral part in building and sustaining communities, networks and supports for people 
 in Lambeth who experience psychosis. SHARP are there to help people in their recovery and build strengthen 
 the core economy through increasing people’s resilience and independence. SHARP provide for much 
-of the therapeutic need of people in Lambeth experiencing psychosis. With opportunities to learn and 
+of the therapeutic need of people in [Lambeth experiencing](#) psychosis. With opportunities to learn and 
 take calculated risks we are helping build and strengthen people’s support to access their local community.
 {% endcapture %}
 

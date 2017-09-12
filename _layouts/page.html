@@ -18,23 +18,14 @@
 		{% for item in items  %}
 				{% assign path = item.link | remove: "#" | append: ".md" %}
 		    {% if path == page.path %}
-        		{% assign prev_index = forloop.index | minus: 2 %}
-            {% if forloop.first != true %}
-            	<a href="{{ items[prev_index].link }}">
-						{% else %}
-							<a class="inactive">
-	          {% endif %}
-	          	&larr; Previous</a> &nbsp;
-	          	
             {% if forloop.last != true %}
-            	<a href="{{ items[forloop.index].link }}">
+            	<a class="btn btn-next" href="{{ items[forloop.index].link }}">Next &rarr;</a><br />
+							or <a href="./">back to home</a>
 						{% else %}
-							<a class="inactive">
+							<a class="btn" href="./">Back to home</a>
 	          {% endif %}
-	          	Next &rarr;</a>
-	          	
 		    {% endif %}
 		{% endfor %}
-
+		
 	</div>
 </div>

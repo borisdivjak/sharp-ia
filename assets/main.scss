@@ -211,6 +211,34 @@ blockquote {
 	line-height: $base-line-height;
 }
 
+.btn {
+	display: inline-block;
+	background: $brand-color-blue;
+	color: white;
+	font-size: ceil($base-font-size * 1.05);
+	padding: 15px 40px;
+	margin: 10px;
+  text-decoration: none !important;
+  font-weight: 500;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .05);
+}
+
+// fun hover stuff
+.hover-animation .btn {
+	transition: .2s ease-out;
+	
+	&:hover {
+		color: white;
+		transform: scale(1.1) ; 
+		background: darken($brand-color-blue, 10%);
+	}
+}
+
+.btn-previous {
+	display: none;
+}
+
 
 // MAIN ELEMENTS
 
@@ -264,11 +292,12 @@ blockquote {
 	border-top: $horizontal-line;
 	margin-top: $spacing-unit;
 	padding-top: $spacing-unit /2;
+	font-size: $smaller-font-size;
 }
 
 .site-footer {
 	border-top: none;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 
 	.footer-content {
@@ -332,12 +361,20 @@ body.subpage {
 	&.subpage-green {
 		color: white;
 		
+		a {
+			color: white;
+		}
+		
 		blockquote {
 			color: darken($brand-color-green,10%);
 		}
 		
 		.site-header, .main.page-content, .site-footer, .page-nav {
 			background-color: $brand-color-green;
+		}
+		
+		.btn {
+			background: darken($brand-color-green,10%);
 		}
 	}
 }
@@ -353,6 +390,14 @@ body.home, body.subpage-green {
 			a {
 				color: white;
 			}
+		}
+	}
+}
+
+body.hover-animation {
+	&.home .footer-content, &.subpage-green {
+		a:hover {
+			color: lighten($brand-color-green, 30%);
 		}
 	}
 }
