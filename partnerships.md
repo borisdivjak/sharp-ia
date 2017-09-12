@@ -14,13 +14,9 @@ is through collaboration, co-production and the effective use of partnership wor
 {% include section-lead-text.html %}
 
 
+![SHARP partners](assets/images/sharp-partners.png "SHARP partners") 
 
-<!--  ![SHARP partners](https://docs.google.com/presentation/d/18F1uROLUDpn3o6knNVYE-fvmTL_s59gNh_430cFEh8A/export/svg?pageid=p "SHARP partners") 
-
-We have successfully partnered with organisations including voluntary sector, businesses and learning 
-institutions. 
-
--->
+<hr />
 
 
 {% capture column1 %}
