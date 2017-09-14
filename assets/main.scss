@@ -514,11 +514,12 @@ body.hover-animation {
 	}
 
 	&.animating-now {
-	  transition: .4s ease-out !important;		
+	  transition: .7s cubic-bezier(.5, 1.75, .5, 1) !important;		
 		transform: scale(1) translate(0, 0);
 		opacity: 1;
 	}
 }
+
 
 // add some fun hover stuff!
 .hover-animation .home-item {	
