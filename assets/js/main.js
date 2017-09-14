@@ -56,6 +56,8 @@ $(function() {
 				$('body').attr('class', bodyclass + $('.subpage-main').data('body-class'));
 				$(window).scrollTop(0);
 				$(window).resize(); // on load completecall resize to resize video iframes
+				$('blockquote').addClass('animate-when-visible');
+				animateVisible();
 			} ); 
 	  });
 
