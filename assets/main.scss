@@ -494,6 +494,18 @@ body.hover-animation {
 			}
 		}
 	}
+	
+	&.animate-when-visible {
+	  transition: 0s !important;		
+    transform: scale(0.7) translate(0, 30px);
+    opacity: 0;
+	}
+
+	&.animating-now {
+	  transition: .4s ease-out !important;		
+		transform: scale(1) translate(0, 0);
+		opacity: 1;
+	}
 }
 
 // add some fun hover stuff!
