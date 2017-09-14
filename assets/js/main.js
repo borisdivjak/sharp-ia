@@ -10,7 +10,7 @@ $(function() {
 						.on('transitionend', function() {
 							$(this).removeClass('animating-now');
 						});
-				}, 50 * (index + Math.random())); // load earlier elements first, but add a bit of random timing for a more natural effect
+				}, 80 * (index + Math.random() * 0.2)); // load earlier elements first, but add a bit of random timing for a more natural effect
 			}
 		});		
 	}
