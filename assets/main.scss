@@ -406,26 +406,16 @@ body.hover-animation {
 
 .activities, .outcomes {
 	text-align: center;
+	font-size: 0;  // to remove gaps between inline-block elements
 	
 	h2 {
+		color: $brand-color;
 		margin-top: 10px;
 		margin-bottom: $spacing-unit;
 	}	
 }
 
-.activities h2 {
-	color: $brand-color;
-}
-
-.outcomes h2 {
-	color: white;
-}
-
-section.outcomes {
-	background: $brand-color-green;
-}
-
-section.outcomes {
+.outcomes {
 	background: $brand-color-green url('images/white-triangle.png') center top/100% 100px no-repeat;
 	padding-top: 110px;
 	margin-top: -20px;
@@ -433,6 +423,10 @@ section.outcomes {
 	@include media-query($on-palm) {
 		background-size: 1000px 100px;
 	}	
+
+	h2 {
+		color: white;
+	}
 }
 
 .home-item {
@@ -444,10 +438,6 @@ section.outcomes {
 	background: #f2f9fe;
 	border-radius: 90px;
 	margin: 0 10px 15px;
-
-	font-size: $smaller-font-size;
-	line-height: $smaller-line-height;
-	font-weight: 500;
 	
 	.home-item-icon img {
 		margin-top: 0;
@@ -458,6 +448,9 @@ section.outcomes {
 	
 	.home-item-title {
 		padding: 0 20px;
+		font-size: $smaller-font-size;
+		line-height: $smaller-line-height;
+		font-weight: 500;
 	}
 
 	&::after {
@@ -489,8 +482,11 @@ section.outcomes {
 		&.activity-item {
 			width: 160px;
 			height: 160px;
-			margin: 0 5px 10px;
-			font-size: 0.9em;
+			margin: 0 6px 10px;
+
+			.home-item-title {
+				font-size: ceil($smaller-font-size * 0.9);
+			}
 
 			.home-item-icon img {
 				width: 55px;
