@@ -66,8 +66,6 @@ The Word Is Out, SHARP (2013). The word is out... out is the word. Self Publishe
 > is at particular risk should SHARP lose interest in research or the capacity to accommodate it.“
 > - Tom K. J. Craig, Emeritus Professor Social Psychiatry
 
-
-
 {% endcapture %}
 
 
