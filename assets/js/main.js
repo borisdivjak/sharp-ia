@@ -5,7 +5,6 @@ $(function() {
 		$('.animate-when-visible').each(function(index, element) {
 			if ($(element).visible(true)) {
 				setTimeout(function() {
-					console.log('index: ' + index);
 					$(element).addClass('animating-now').removeClass('animate-when-visible')
 						.on('transitionend', function() {
 							$(this).removeClass('animating-now');
@@ -58,6 +57,25 @@ $(function() {
 				$(window).resize(); // on load completecall resize to resize video iframes
 				$('blockquote').addClass('animate-when-visible');
 				animateVisible();
+				
+				$('.hidden-section-toggle').on('click', function(e) {
+					e.preventDefault();
+					container = $(this).parent();
+					content = $('.hidden-section-content', container);
+					if ($(container).hasClass('show')) {  // IF shown then hide
+						$(content).addClass('set-height');
+						$(content).css('max-height', $(content).height() + 'px');
+						setTimeout(function() {
+							$(content).removeClass('set-height');
+							$(container).removeClass('show');						
+							$(content).css('max-height', '0');
+						}, 10); // just a bit of delay is needed here for height change to take effect
+					}
+					else { // IF hidden then show
+						$(container).addClass('show');		
+						$(content).css('max-height', '2000px'); // needs to be a high enough number
+					}
+				});
 			} ); 
 	  });
 

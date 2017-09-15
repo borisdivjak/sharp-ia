@@ -40,6 +40,100 @@ We have successfully partnered with over 50 organisations including voluntary se
 
 
 
+{% capture hidden-section-content %}
+
+{% capture column1 %}
+
+#### Physical health support services
+
+- Brixton Rec
+- CLAHRC South London
+- Edible Lambeth
+- First Step Trust
+- Greenwich Leisure Limited
+- Guy’s and St Thomas' Foundation Trust – Community Services
+- Health for walks
+- Health Improvement Team
+- Health Services and Population Research Department
+- Institute of Psychiatry, Psychology and Neurosciences (IOPPN)
+- King's College London
+- King’s College Hospital
+- Lambeth College (in the past)
+- Lambeth Early Intervention and Prevention Services (LEIPS)
+- Lambeth Stop Smoking Service
+- Myatt's Fields Park Community Greenhouse – gardening
+- Sports Fusion
+- Stone Crescent Media
+- Wheels for Wellbeing (in the past)
+- Wooden Spoon House
+
+#### Research and education partners
+
+- Brunel University
+- Canterbury college
+- Canterbury University
+- Institute of Psychiatry, Psychology and Neurosciences (IOPPN)
+- King's College London
+- London South Bank university
+- Placement Management Partnership
+- South Bank University
+
+{% endcapture %}
+
+
+
+{% capture column2 %}
+
+#### Mental health support services
+
+- Dragon Cafe
+- First Step Trust
+- Lambeth College
+- LLWC
+- Mosaic Clubhouse
+- Raw sounds
+- Recovery College
+- SLaM ad Art
+- SLaM partners
+- Sound Minds
+- The comedy school
+- Thrive
+- Vocation Matters
+
+#### Social support services
+
+- Lambeth Parent and Infant Psychotherapy service
+- Lambeth social services
+- Parental mental health specialist interest group
+- Slam Think Family Strategy Group
+
+#### Innovation partners
+
+- Department Store for the Mind
+- Metroprint
+- Mindwave
+- Tate Modern
+- The Ritzy Cinema
+- Unboxed
+
+#### Lambeth commissioning services
+
+- Lambeth CCG
+- Lambeth Council 
+- Lambeth Living Well Collaborative
+- Living Well Network Alliance
+
+{% endcapture %}
+
+
+
+{% include section-two-columns.html classes="tiny-text" %}
+
+{% endcapture %}
+
+{% include hidden-section.html title="list of SHARP partners" %}
+
+
 <hr />
 
 
