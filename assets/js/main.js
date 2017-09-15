@@ -63,17 +63,18 @@ $(function() {
 					container = $(this).parent();
 					content = $('.hidden-section-content', container);
 					if ($(container).hasClass('show')) {  // IF shown then hide
-						$(content).addClass('set-height');
-						$(content).css('max-height', $(content).height() + 'px');
+						$(content).css('max-height', $(content).height()); // set to fixed height back from none
 						setTimeout(function() {
-							$(content).removeClass('set-height');
 							$(container).removeClass('show');						
 							$(content).css('max-height', '0');
-						}, 10); // just a bit of delay is needed here for height change to take effect
+						}, 10 ); // need short delay to for height to change properly
 					}
 					else { // IF hidden then show
 						$(container).addClass('show');		
-						$(content).css('max-height', '2000px'); // needs to be a high enough number
+						$(content).css('max-height', $('.hidden-section-content-wrapper', content).height()); // set to actual height of inner content
+						$(content).on('transitionend', function() {
+							if ($(container).hasClass('show')) $(this).css('max-height', 'none'); // set to none after transition in case of window resizing / other changes
+						});
 					}
 				});
 			} ); 

@@ -1,6 +1,8 @@
 <div class="hidden-section">
 	<div class="hidden-section-content">
-		{{ hidden-section-content | markdownify }}
+		<div class="hidden-section-content-wrapper">
+			{{ hidden-section-content | markdownify }}
+		</div>
 	</div>
 	<a class="hidden-section-toggle" href="#"><span>{{ include.title }}</span></a>
 </div>
