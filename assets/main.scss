@@ -514,7 +514,7 @@ body.hover-animation {
 	}
 
 	&.animating-now {
-	  transition: .7s cubic-bezier(.5, 1.75, .5, 1) !important;		
+	  transition: .5s ease-out !important;		
 		transform: scale(1) translate(0, 0);
 		opacity: 1;
 	}
