@@ -40,19 +40,15 @@ partnership with the Brixton and Ferndale Leisure centres.
 ### Psychological Therapies (Individual and Family)
 
 Psychological therapies for psychosis including: Cognitive Behavioural Therapy (CBT), 
-a specialist therapy to address drug and alcohol use, family interventions and AVATAR therapy
+a specialist therapy to address drug and alcohol use, family interventions and AVATAR therapy. 
 
+We run a number of different groups e.g. hearing voices, mindfulness, and Acceptance and Commitment Therapy (ACT).
 
 {% endcapture %}
 
 
 
 {% capture column2 %}
-
-### Groups
-
-We run a number of different groups e.g. hearing voices, mindfulness, and Acceptance and Commitment Therapy (ACT).
-
 
 ### Social Inclusion Intervention
 

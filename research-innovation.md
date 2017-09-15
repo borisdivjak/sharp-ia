@@ -6,13 +6,12 @@ icon: assets/images/icon-research-innovation.png
 
 
 {% capture content %}
-SHARP continues to be involved in research with King’s Health Partners and IOPPN. SHARP 
-has been responsible for facilitating pilot studies for ACT, AVATAR, Personalisation and 
-My Health Locker and numerous other studies. We have been integral in the recruitment and 
-facilitation process, enabling studies to run which may have been challenged due to site 
-and participation barriers. We continue to be at the cutting edge of service delivery and 
-have incorporated new trialled and tested interventions into our core therapy offering to 
-people such as mindfulness and ACT.
+SHARP continues to be involved in research with King’s Health Partners and IOPPN. SHARP has 
+facilitated pilot studies for ACT, AVATAR, Personalisation and My Health Locker and numerous 
+other studies. We have been integral to the recruitment and facilitation process, enabling 
+studies to run which may have been challenged due to site and participation barriers. We 
+continue to be at the cutting edge of service delivery, incorporating new trialled and tested 
+interventions into our core therapy offering such as mindfulness and ACT. 
 {% endcapture %}
 
 {% include section-lead-text.html %}

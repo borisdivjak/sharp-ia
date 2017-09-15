@@ -14,9 +14,34 @@ is through collaboration, co-production and the effective use of partnership wor
 {% include section-lead-text.html %}
 
 
-![SHARP partners](assets/images/sharp-partners.png "SHARP partners") 
+
+{% capture column1 %}
+
+### Linking adults with psychosis to secondary services in Lambeth 
+
+SHARP provides connections within the community and helps bridge the gap between services and unmet 
+need of those experiencing severe and enduring mental illness. One of the ways in which SHARP has been 
+successful in addressing this need is through collaboration, co-production and the effective use of partnership work. 
+We have successfully partnered with over 50 organisations including voluntary sector, businesses and learning institutions. 
+
+{% endcapture %}
+
+
+
+{% capture column2 %}
+
+![SHARP partners](assets/images/sharp-partners-smaller.svg "SHARP partners") 
+
+{% endcapture %}
+
+
+
+{% include section-two-columns.html %}
+
+
 
 <hr />
+
 
 
 {% capture column1 %}
