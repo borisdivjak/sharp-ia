@@ -25,10 +25,10 @@ $(function() {
 	$(window).on('resize', function() {
 				
 		// keep video ratio at 16:9
-		var iframeWidth = $('iframe').css('width');
+		var iframeWidth = $('iframe[data-iframe-type="video"]').css('width'); // only target video frames
 		var iframeHeight = 0;
 		if (iframeWidth) iframeHeight = Math.floor(parseInt(iframeWidth) * 0.5625) + 'px';
-		$('iframe').css('height', iframeHeight);
+		$('iframe[data-iframe-type="video"]').css('height', iframeHeight);  // only target video frames
 		animateVisible();
 	});
 	

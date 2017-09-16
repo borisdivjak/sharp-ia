@@ -18,6 +18,8 @@ in a safe way. We do this in order to help bring equality for those we work with
 
 {% capture column1 %}
 
+### Warm and welcoming
+
 We know that environments are important in helping with people’s recovery (Daykin and O’Connor, 2008). 
 SHARP’s building has been designed and renovated to promote positive mental health and wellbeing 
 (Heidari et al, 2016). Our space ‘feels non-mental health’. The physical environment is colourful, 
@@ -30,14 +32,64 @@ even the garden is maintained to enhance a sense of calm.
 
 {% capture column2 %}
 
+![SHARP – a warm and welcoming environment](assets/images/sharp-garden.jpg "SHARP – a warm and welcoming environment") 
+
+{% endcapture %}
+
+
+{% include section-two-columns.html %}
+
+
+
+
+{% capture column1 %}
+
 > "I think that the thing with SHARP is you know that when you come through the door you’re safe. 
 > I feel it’s OK here, other places sometimes they are a bit more, you know, aggressive." 
 > - Person who has used Sharp services 
 
-> “I kind of wish that I could still come here as much, it’s a welcoming place.” 
+{% endcapture %}
+
+
+
+{% capture column2 %}
+
+
+> “It’s a welcoming place!” 
 > - Person who has used Sharp services
 
 {% endcapture %}
 
 
 {% include section-two-columns.html %}
+
+
+
+<hr />
+
+
+
+{% capture column1 %}
+
+### Lived experience is valued at SHARP
+
+Staff represent the people we work with. Almost half (47%) of the people we employ at SHARP have lived 
+experience of Mental Illness. From the staff who greet you at reception, to SHARP gallery and physical 
+health interventions, we provide jobs and grow skills so that people increase their confidence and employability. 
+
+{% endcapture %}
+
+
+
+{% capture column2 %}
+
+[ video to come here ]
+
+{% endcapture %}
+
+
+{% include section-two-columns.html %}
+
+
+
+

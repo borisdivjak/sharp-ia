@@ -18,7 +18,7 @@ engage with therapies (SHARP Feasibility Study, 2006).
 
 {% capture column1 %}
 
-![SHARP local setting](assets/images/sharp-local-setting.jpg "SHARP local setting")
+<iframe data-iframe-type="gmaps" src="https://snazzymaps.com/embed/16056" width="100%" height="500px"></iframe>
 
 {% endcapture %}
 
@@ -45,10 +45,12 @@ engage with therapies (SHARP Feasibility Study, 2006).
 ### Lambeth’s BME community
 
 SHARP has shown its ability to engage and work with people who represent Lambeth and 
-access its mental health services. 
+access its mental health services for psychosis. 
 
 Of those who are seen and assessed by SHARP over the last decade 70% have gone on to engage 
-in therapy. A high proportion of those we have managed to engage and work with have come 
+in therapy. 
+
+A high proportion of those we have managed to engage and work with have come 
 from Lambeth’s BME community.
 
 {% endcapture %}
