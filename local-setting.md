@@ -58,13 +58,37 @@ from Lambeth’s BME community.
 
 {% capture column2 %}
 
-![SHARP etchnicity](assets/images/sharp-ethnicity.gif "SHARP ethnicity")
+<div class="chart-bme"></div>
+
+<script>
+var chart = c3.generate({
+  bindto: '.chart-bme',
+  data: {
+    columns: [
+			['White', 29.4],
+			['Black', 57.2],
+			['Asian', 3.8],
+			['Mixed', 4.4],
+			['Other', 5.2]
+    ],
+    type : 'pie'
+  },
+  color: {
+		pattern: ['#a2d4f7', '#155b8b', '#f99a00', '#e1007f', '#95c705',  '#98df8a', '#d62728', '#ff9896', '#9467bd']
+	},
+	transition: {
+		duration: 1000
+	},
+	size: {
+      height: 400
+	}
+});
+</script>
 
 {% endcapture %}
 
 
 {% include section-two-columns.html %}
-
 
 
 
