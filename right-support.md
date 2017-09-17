@@ -6,7 +6,7 @@ icon: assets/images/icon-right-support.png
 
 {% capture content %}
 The core business of SHARP is offering therapeutic and psychosocial interventions to enable people 
-access to a broad range of activity options. 
+with psychosis living in Lambeth access to a broad range of activity options. 
 Interventions are facilitated by a multidisciplinary team skilled in therapeutic delivery. 
 A broad range of interventions and wellbeing initiatives are also offered in partnership with the community.
 {% endcapture %}

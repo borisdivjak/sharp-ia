@@ -68,7 +68,7 @@ health interventions, we provide jobs and grow skills so that people increase th
 
 {% capture column2 %}
 
-[ video to come here ]
+![Video placeholder](assets/images/video-placeholder.jpg "Video placeholder") 
 
 {% endcapture %}
 

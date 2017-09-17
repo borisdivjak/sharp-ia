@@ -16,7 +16,7 @@ $base-font-weight: 300 !default;
 $smaller-font-size:  ceil($base-font-size * 0.84); // e.g. column content
 $smallest-font-size: ceil($base-font-size * 0.75); // e.g. footer
 $small-font-size:  $smaller-font-size;
-$base-line-height: 1.5em !default;
+$base-line-height: 1.7em !default;
 $smaller-line-height: $base-line-height * 0.8 !default;
 
 $spacing-unit:     30px !default;
@@ -122,6 +122,7 @@ hr {
 .tiny-text {
 	p, ul, h3, h4 {
 		font-size: ceil( $small-font-size * 0.8) !important;
+		line-height: $base-line-height;
 	}
 }
 

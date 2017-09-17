@@ -5,23 +5,40 @@ icon: assets/images/icon-interventions.png
 # Interventions
 
 {% capture content %}
-SHARP offers the entire range of NICE recommended interventions for psychosis. We are also a research 
-hub that offers additional support to people via pilot studies. We have been able to offer a broad range 
-of newly researched interventions such as SLoMO, AVatar and walking groups currently not on offer anywhere else. 
-We also offer a range of wellbeing initiatives in partnership with the wider community such as gym, 
-better with a book and SHARP gallery. We tailor each programme to individual's needs according to mind, 
-body and flow. We understand that people may have more than one area of need and provide an integrated and 
-holistic approach (Nice, 2017). 
+SHARP offers the entire range of [NICE recommended interventions for psychosis](https://www.nice.org.uk/guidance/conditions-and-diseases/mental-health-and-behavioural-conditions/psychosis-and-schizophrenia). 
+We also provide a research hub that offers additional support to people via pilot studies. We have been able to offer a broad 
+range of newly researched interventions currently not on offer anywhere else. We also offer a range of wellbeing initiatives 
+in partnership with the wider community. We tailor each programme to individual's needs according to mind, body and flow.
 {% endcapture %}
 
 {% include section-lead-text.html %}
 
 
+
+
+{% capture column1 %}
+
+![Video placeholder](assets/images/video-placeholder.jpg "Video placeholder") 
+
+{% endcapture %}
+
+
+
+{% capture column2 %}
+
 > "The social aspect important, my problem is loneliness so I was glad that it’s not drug based. 
 > This is more productive than meds groups because help each other."
+> - Person who has used SHARP services
+
+{% endcapture %}
 
 
-<br />
+
+{% include section-two-columns.html %}
+
+
+
+
 <hr />
 
 {% capture column1 %}
