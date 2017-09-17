@@ -166,13 +166,13 @@ blockquote {
 
 	&.animate-when-visible {
 	  transition: 0s !important;		
-    transform: scale(0.95) translate(0, 30px);
+    transform: scale3d(0.95, 0.95, 1) translate3d(0, 30px, 0);
     opacity: 0;
 	}
 
 	&.animating-now {
 	  transition: .6s ease-out !important;		
-		transform: scale(1) translate(0, 0);
+		transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
@@ -258,7 +258,7 @@ blockquote {
 	
 	&:hover {
 		color: white;
-		transform: scale(1.1) ; 
+		transform: scale3d(1.1, 1.1, 1) ; 
 		background: darken($brand-color-blue, 10%);
 	}
 }
@@ -310,7 +310,7 @@ blockquote {
 		text-decoration: none;
 		
 		.sharp-logo img {
-			transform: scale(1.1) ; 
+			transform: scale3d(1.1, 1.1, 1) ; 
 		}	
 	}
 }
@@ -572,13 +572,13 @@ body.hover-animation {
 	
 	&.animate-when-visible {
 	  transition: 0s !important;		
-    transform: scale(0.7) translate(0, 30px);
+    transform: scale3d(0.7, 0.7, 1) translate3d(0, 30px, 0);
     opacity: 0;
 	}
 
 	&.animating-now {
 	  transition: .5s ease-out !important;
-		transform: scale(1) translate(0, 0);
+		transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
@@ -592,14 +592,14 @@ body.hover-animation {
 
 	&:hover {
 		text-decoration: none !important;
-    transform: scale(1.2);
+    transform: scale3d(1.2, 1.2, 1);
 		
 		.home-item-icon {
-			transform: scale(0.9) translate(0, -5px);
+			transform: scale3d(0.9, 0.9, 1) translate3d(0, -5px, 0);
 		}
 		
 		&::after {
-			transform: translate(0, 5px);
+			transform: translate3d(0, 5px, 0);
 		}
 	}
 }
@@ -639,13 +639,13 @@ body.hover-animation {
 	
 	svg.animate-when-visible g {
 	  transition: 0s !important;		
-	  transform: scale(0.9) translate(0, 20px);
+	  transform: scale3d(0.9, 0.9, 1) translate3d(0, 20px, 0);
 	  opacity: 0;
 	}
 	
 	svg.animating-now g {
 	  transition: .6s ease-out !important;
-		transform: scale(1) translate(0, 0);
+		transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
 		opacity: 1;
 	}
 }
@@ -746,7 +746,7 @@ iframe[data-iframe-type="gmaps"] {
 	.c3-axis-x .tick text {
 		font-size: $smaller-font-size;
 		font-weight: 500;
-		transform: translate(0,5px);
+		transform: translate3d(0,5px, 0);
 		fill: white;
 	}
 	
