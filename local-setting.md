@@ -58,32 +58,30 @@ from Lambeth’s BME community.
 
 {% capture column2 %}
 
-<div class="chart-bme"></div>
-
-<script>
-var chart = c3.generate({
-  bindto: '.chart-bme',
-  data: {
-    columns: [
-			['White', 29.4],
-			['Black', 57.2],
-			['Asian', 3.8],
-			['Mixed', 4.4],
-			['Other', 5.2]
+<div class="chart chart-bme" data='
+{
+  "bindto": ".chart-bme",
+  "data": {  
+    "columns": [
+			["White", 29.4],
+			["Black", 57.2],
+			["Asian", 3.8],
+			["Mixed", 4.4],
+			["Other", 5.2]
     ],
-    type : 'pie'
+    "type" : "pie"
   },
-  color: {
-		pattern: ['#a2d4f7', '#155b8b', '#f99a00', '#e1007f', '#95c705',  '#98df8a', '#d62728', '#ff9896', '#9467bd']
+  "color": {
+		"pattern": ["#a2d4f7", "#155b8b", "#f99a00", "#e1007f", "#95c705",  "#98df8a", "#d62728", "#ff9896", "#9467bd"]
 	},
-	transition: {
-		duration: 1000
+	"transition": {
+		"duration": 2000
 	},
-	size: {
-      height: 400
+	"size": {
+    "height": 400
 	}
-});
-</script>
+}
+'></div>
 
 {% endcapture %}
 

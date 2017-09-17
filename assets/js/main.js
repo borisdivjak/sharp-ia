@@ -1,7 +1,25 @@
 $(function() {
 	var bodyclass = '';
+	var charts = [];
+
 
 	function animateVisible() {
+		// first trigger charts (load real data)
+		$('.chart.animate-when-visible').each(function(index, element) {
+			if ($(element).visible(true)) {
+				var chart_index = 0;
+
+				for (i = 0; i < charts.length; i ++) {
+					if (charts[i].element == element) chart_index = i;
+				}
+				
+				var real_data = $.parseJSON($(element).attr('data'));			
+				charts[chart_index].load(real_data.data);
+				$(element).removeClass('animate-when-visible');
+			}
+		});
+
+		// then trigger css animations
 		$('.animate-when-visible').each(function(index, element) {
 			if ($(element).visible(true)) {
 				setTimeout(function() {
@@ -13,6 +31,8 @@ $(function() {
 			}
 		});		
 	}
+
+
 
 	if (!Modernizr.touchevents) {
 		bodyclass = 'hover-animation ';
@@ -55,9 +75,9 @@ $(function() {
 				$('body').attr('class', bodyclass + $('.subpage-main').data('body-class'));
 				$(window).scrollTop(0);
 				$(window).resize(); // on load completecall resize to resize video iframes
-				$('blockquote').addClass('animate-when-visible');
-				animateVisible();
+				$('blockquote, .chart').addClass('animate-when-visible');
 				
+				// add functionality for collapsible sections
 				$('.hidden-section-toggle').on('click', function(e) {
 					e.preventDefault();
 					container = $(this).parent();
@@ -77,6 +97,24 @@ $(function() {
 						});
 					}
 				});
+
+				// load charts
+				$('.chart').each(function(index, element) {
+					var data = $.parseJSON($(element).attr('data'));
+					
+					// reset all data points to 0 (for a nice animation on delayed load)
+					for (i = 0; i < data.data.columns.length; i++) {
+						for (j=0; j < data.data.columns[i].length; j++) {
+							if ($.isNumeric(data.data.columns[i][j])) data.data.columns[i][j] = 0;
+						}
+					}
+
+					// create chart, but true data will only be loaded on animateVisible
+					var chart = c3.generate(data);	
+					charts.push(chart);
+				});
+				
+				animateVisible(); // finally, trigger the animations on visible elements
 			}); 
 	  });
 
