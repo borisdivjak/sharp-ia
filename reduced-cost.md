@@ -47,7 +47,7 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 	  }
   },
   "color": {
-		"pattern": ["#e1007f","#155b8b", "ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+		"pattern": ["#ffffff","#155b8b",  "#e1007f","ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
 	},
 	"transition": {
 		"duration": 2000
@@ -111,7 +111,7 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 	  }
   },
   "color": {
-		"pattern": ["#e1007f","#155b8b", "ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+		"pattern": ["#ffffff","#155b8b",  "#e1007f","ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
 	},
 	"transition": {
 		"duration": 2000
