@@ -39,8 +39,7 @@ selected to assess desired outcomes for the people who use our service.
 Well-being means looking after our bodies, minds and getting into a flow of what we want to do. 
 Each element interacts with the other and is key to leading a balanced and full life.
 
-![Mind, Body, Flow](assets/images/mind-body-flow.svg "Mind, Body, Flow") 
-
+<div class="svg-wrapper" data-filename="assets/images/mind-body-flow.svg" style="height: 400px"></div>
 
 {% endcapture %}
 

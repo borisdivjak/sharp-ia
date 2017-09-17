@@ -626,6 +626,32 @@ body.hover-animation {
 }
 
 
+// SVG DIAGRAM ANIMATION
+
+
+.svg-wrapper  {
+	width: 100%;
+
+	g {
+	  transform-origin: 50% 0%;
+	}
+	
+	svg.animate-when-visible g {
+	  transition: 0s !important;		
+	  transform: scale(0.9) translate(0, 20px);
+	  opacity: 0;
+	}
+	
+	svg.animating-now g {
+	  transition: .6s ease-out !important;
+		transform: scale(1) translate(0, 0);
+		opacity: 1;
+	}
+}
+
+
+
+
 
 // OTHER 
 

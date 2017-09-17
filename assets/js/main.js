@@ -116,6 +116,15 @@ $(function() {
 					charts.push(chart);
 				});
 				
+				// load SVGs (e.g. diagrams etc.)
+				$('.svg-wrapper').each(function(index, element) {
+					$(element).svg({ loadURL: $(element).attr('data-filename'), onLoad: function() {
+						// animate elemenets when loaded
+						$('svg').addClass('animate-when-visible'); 
+						animateVisible();
+					}});
+				});
+				
 				animateVisible(); // finally, trigger the animations on visible elements
 			}); 
 	  });

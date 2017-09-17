@@ -30,7 +30,7 @@ We have successfully partnered with over 50 organisations including voluntary se
 
 {% capture column2 %}
 
-![SHARP partners](assets/images/sharp-partners-smaller.svg "SHARP partners") 
+<div class="svg-wrapper" data-filename="assets/images/sharp-partners-smaller.svg" style="height: 400px"></div>
 
 {% endcapture %}
 
