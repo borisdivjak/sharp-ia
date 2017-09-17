@@ -6,16 +6,147 @@ body-class: subpage-green
 # Reduced cost to services
 
 {% capture content %}
-SHARP has shown a reduction in costs to the trust over the last decade. Engagement in 
-SHARP interventions by those experiencing psychosis has lead to reduced service contact and bed usage.
+SHARP has shown a reduction in costs to the trust over the last decade. Engagement in SHARP 
+interventions by those experiencing psychosis has lead to reduction in bed usage . Evidence 
+gathered demonstrates that SHARP has a positive impact on wellbeing of its users while creating 
+cost savings for the trust over the last decade (McDonald & Josefsberg, unpublished).  
 {% endcapture %}
 
 {% include section-lead-text.html %}
 
 
+
+
+
+{% capture column1 %}
+
 ### 61% reduction in team episodes after first SHARP episode
 
-![Reduction in team episodes](assets/images/chart-reduced-cost.gif "eduction in team episodes") 
+<div class="chart chart-bed-days chart-type-bar" data='
+{
+  "bindto": ".chart-bed-days",
+  "padding": {
+	  "bottom": 20,
+	  "top": 60
+  },
+  "data": {  
+    "columns": [
+			["6 months BEFORE first episode", 2722771, 897558],
+			["6 months AFTER first episode", 1079684, 611087]
+    ],
+    "type" : "bar",
+    "labels": true
+  },
+  "axis": {
+	  "x": {
+	    "type": "category",
+	    "categories": ["SHARP", "Control"]
+	  },
+	  "y": {
+	    "show": false
+	  }
+  },
+  "color": {
+		"pattern": ["#e1007f","#155b8b", "ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+	},
+	"transition": {
+		"duration": 2000
+	},
+	"size": {
+    "height": 400
+	},
+	"legend": {
+	  "position": "inset",
+		"inset": {
+	    "anchor": "top-left",
+	    "x": -5,
+	    "y": -60,
+	    "step": 3
+		}
+  },
+  "tooltip": {
+	  "show": false
+  },
+  "interaction": {
+	  "enabled": false
+  },
+	"grid": {
+    "y": {
+	    "show": true
+    }
+	}
+}
+'></div>
+
+
+{% endcapture %}
+
+
+{% capture column2 %}
+
+### 61% reduction in team episodes after first SHARP episode
+
+<div class="chart chart-bed-days2 chart-type-bar" data='
+{
+  "bindto": ".chart-bed-days2",
+  "padding": {
+	  "bottom": 20,
+	  "top": 60
+  },
+  "data": {  
+    "columns": [
+			["6 months BEFORE first episode", 2722771, 897558],
+			["6 months AFTER first episode", 1079684, 611087]
+    ],
+    "type" : "bar",
+    "labels": true
+  },
+  "axis": {
+	  "x": {
+	    "type": "category",
+	    "categories": ["SHARP", "Control"]
+	  },
+	  "y": {
+	    "show": false
+	  }
+  },
+  "color": {
+		"pattern": ["#e1007f","#155b8b", "ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+	},
+	"transition": {
+		"duration": 2000
+	},
+	"size": {
+    "height": 400
+	},
+	"legend": {
+	  "position": "inset",
+		"inset": {
+	    "anchor": "top-left",
+	    "x": -5,
+	    "y": -60,
+	    "step": 3
+		}
+  },
+  "tooltip": {
+	  "show": false
+  },
+  "interaction": {
+	  "enabled": false
+  },
+	"grid": {
+    "y": {
+	    "show": true
+    }
+	}
+}
+'></div>
+
+
+{% endcapture %}
+
+
+{% include section-two-columns.html %}
 
 <p class="source">Source: Some study conducted by SLaM or Something Else (2014)</p>
 

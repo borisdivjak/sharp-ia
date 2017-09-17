@@ -14,27 +14,8 @@ engage with therapies (SHARP Feasibility Study, 2006).
 {% include section-lead-text.html %}
 
 
-
-
-{% capture column1 %}
-
 <iframe data-iframe-type="gmaps" src="https://snazzymaps.com/embed/16056" width="100%" height="500px"></iframe>
 
-{% endcapture %}
-
-
-{% capture column2 %}
-
-> "The fact that I have no bad memories here is important. I like that when I come to SHARP 
-> it is not about my medication and more about my hopes and the things I want to do with my life. 
-> It's a happy place and a happy building which makes me want to go for my sessions."
-
-> "Even on a bad day, it’s easy to get to you know? That helps get me out."
-
-{% endcapture %}
-
-
-{% include section-two-columns.html %}
 
 
 <hr />
@@ -53,10 +34,15 @@ in therapy.
 A high proportion of those we have managed to engage and work with have come 
 from Lambeth’s BME community.
 
+> "Even on a bad day, it’s easy to get to you know? That helps get me out."
+> - Person who has used Sharp services 
+
 {% endcapture %}
 
 
 {% capture column2 %}
+
+Percentage ethnicity attending SHARP out of total caseload (SHARP data base)  
 
 <div class="chart chart-bme" data='
 {

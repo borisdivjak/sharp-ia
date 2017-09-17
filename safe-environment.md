@@ -26,24 +26,6 @@ SHARP’s building has been designed and renovated to promote positive mental he
 warm and welcoming. From the natural light in rooms to the fish tank in our shared reception area, 
 even the garden is maintained to enhance a sense of calm. 
 
-{% endcapture %}
-
-
-
-{% capture column2 %}
-
-![SHARP – a warm and welcoming environment](assets/images/sharp-garden.jpg "SHARP – a warm and welcoming environment") 
-
-{% endcapture %}
-
-
-{% include section-two-columns.html %}
-
-
-
-
-{% capture column1 %}
-
 > "I think that the thing with SHARP is you know that when you come through the door you’re safe. 
 > I feel it’s OK here, other places sometimes they are a bit more, you know, aggressive." 
 > - Person who has used Sharp services 
@@ -54,9 +36,7 @@ even the garden is maintained to enhance a sense of calm.
 
 {% capture column2 %}
 
-
-> “It’s a welcoming place!” 
-> - Person who has used Sharp services
+![SHARP – a warm and welcoming environment](assets/images/sharp-garden.jpg "SHARP – a warm and welcoming environment") 
 
 {% endcapture %}
 
@@ -76,6 +56,11 @@ even the garden is maintained to enhance a sense of calm.
 Staff represent the people we work with. Almost half (47%) of the people we employ at SHARP have lived 
 experience of Mental Illness. From the staff who greet you at reception, to SHARP gallery and physical 
 health interventions, we provide jobs and grow skills so that people increase their confidence and employability. 
+
+> "The fact that I have no bad memories here is important. I like that when I come to SHARP 
+> it is not about my medication and more about my hopes and the things I want to do with my life. 
+> It's a happy place and a happy building which makes me want to go for my sessions."
+> - Person who has used Sharp services 
 
 {% endcapture %}
 

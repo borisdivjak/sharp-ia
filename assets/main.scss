@@ -37,7 +37,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $content-width:    1040px !default;
 
 $on-mobile:        450px !default;
-$on-palm:          650px !default;
+$on-palm:          700px !default;
 $on-laptop:        845px !default;
 $on-desktop:			 $on-laptop;
 
@@ -695,4 +695,49 @@ iframe[data-iframe-type="gmaps"] {
 	.c3-chart-arcs .c3-shapes path {
 		stroke: none;
 	}
+
+	.c3-grid line {
+		stroke: black;
+		opacity: 0.2;
+	}
+	
+	.tick line, .c3-axis path {
+		opacity: 0.2;
+	}
+
+	.c3-legend-item-event {
+		display: none; // this disables the legend mouseover and click events
+	}
 }
+
+.chart-type-bar {
+	.c3-zoom-rect {
+		opacity: 0.05 !important;
+	}
+
+	.c3-axis-x .tick text {
+		font-size: $smaller-font-size;
+		font-weight: 500;
+		transform: translate(0,5px);
+		fill: white;
+	}
+	
+	.c3-legend-item {
+		font-size: $smaller-font-size;
+		
+		line {
+			stroke-width: 12;
+		}
+	}
+	
+	.c3-legend-background {
+		opacity: 0;
+	}
+	}
+
+.subpage-green {
+	.c3-legend-item text, .tick text {
+		fill: white;
+	}
+}
+

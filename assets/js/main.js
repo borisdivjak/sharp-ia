@@ -111,6 +111,8 @@ $(function() {
 
 					// create chart, but true data will only be loaded on animateVisible
 					var chart = c3.generate(data);	
+					console.log(chart);					
+//					chart.legend.item.onmouseover = function() {};
 					charts.push(chart);
 				});
 				
