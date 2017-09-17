@@ -43,6 +43,7 @@ $(function() {
 
 
 	$(window).on('resize', function() {
+		$('.svg-wrapper svg').attr('width', $('.svg-wrapper').css('width')); // fit svg in smaller windows
 				
 		// keep video ratio at 16:9
 		var iframeWidth = $('iframe[data-iframe-type="video"]').css('width'); // only target video frames
