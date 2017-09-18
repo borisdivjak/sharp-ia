@@ -209,6 +209,11 @@ blockquote {
 	@include media-query($on-mobile) {
 		padding: 0 15px;
 	}
+	
+	&.subpage-main {
+		padding-top: ceil($spacing-unit * 1.33);	
+	}
+	
 }
 
 

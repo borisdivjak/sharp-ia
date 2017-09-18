@@ -94,19 +94,19 @@ _Commonwealth Health Partnerships_, 112-114.
 Therapy Aid for Refractory auditory hallucinations (AVATAR therapy): study protocol for a randomised controlled trial](https://www.ncbi.nlm.nih.gov/pubmed/26269098). _Trials_, 16, 349.
  
 - Craig, T. K., Ward, T., & Rus-Calafell, M. (2016) [AVATAR Therapy for Refractory Auditory Hallucinations](https://www.ncbi.nlm.nih.gov/books/NBK373172/). In: 
-_Brief Interventions for Psychosis: A Clinical Compendium_, B. Pradhan et al. (eds.), Springer International Publishing Switzerland. https://www.ncbi.nlm.nih.gov/books/NBK373172/
+_Brief Interventions for Psychosis: A Clinical Compendium_, B. Pradhan et al. (eds.), Springer International Publishing Switzerland.
 
 - Craig et al (Submitted) AVATAR therapy, a novel treatment for auditory verbal hallucinations in psychosis: a randomized controlled trial.
   
 - Croucher, A (2016) [Courage and Wellbeing For a Life beyond Mental Illness](http://www.kingshealthpartners.org/latest/726-life-beyond-mental-illness). 
 _Engage: the National Association for Gallery Education For Health Care Leaders Health Services Journal_, 28.
 
+- Emma O’Donoghue, Eric Morris, Joseph Oliver and Louise Johns: _ACT for Psychosis Recovery: A workbook on running effective groups for people with psychosis using acceptance and mindfulness_ will be published in March 2018 by New Harbinger, USA.
 
 {% endcapture %}
 
-{% capture column2 %}
 
-- Emma O’Donoghue, Eric Morris, Joseph Oliver and Louise Johns: _ACT for Psychosis Recovery: A workbook on running effective groups for people with psychosis using acceptance and mindfulness_ will be published in March 2018 by New Harbinger, USA.
+{% capture column2 %}
  
 - Garety et al (submitted) ['SlowMo', a digital therapy for people who fear harm from others: study protocol for a randomised controlled trial targeting reasoning 
 and paranoia](http://slowmotherapy.co.uk/) 
@@ -127,7 +127,7 @@ _Social Work and Social Sciences Review_, 14 (3): 37-49.
 {% endcapture %}
 
 
-{% include section-two-columns.html %}
+{% include section-two-columns.html classes="tiny-text" %}
 
 
 {% endcapture %}
