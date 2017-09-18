@@ -146,7 +146,8 @@ An example of this has been our recent partnership work and collaboration with t
 Ritzy cinema and recovery college to co-produce an annual event in honor of world mental health day. 
 The series of improvisation workshops and events have had a major impact on people’s well-being.
 
-<iframe data-iframe-type="video" src="https://player.vimeo.com/video/199067256" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe data-iframe-type="video" src="https://player.vimeo.com/video/199067256?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 {% endcapture %}
 
