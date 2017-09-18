@@ -103,6 +103,7 @@ h4 {
 hr {
 	border: none;
 	border-top: $horizontal-line;
+	border-image: url('images/dotted-line.png') 1 0 0 0 repeat;
 	margin: $spacing-unit 0;
 }
 
@@ -110,6 +111,7 @@ hr {
 	font-size: ceil($base-font-size * 1.05);
 	border-top: 	 $horizontal-line;
 	border-bottom: $horizontal-line;
+	border-image: url('images/dotted-line.png') 1 0 1 0 repeat;
 	padding-top: $spacing-unit / 2;;
 	margin-bottom: ceil($spacing-unit * 1.25);
 	margin-top: $spacing-unit;
@@ -178,18 +180,18 @@ blockquote {
 }
 
 .col-left blockquote::after {
-	border-width: 0 0 20px 20px;
+	border-width: 0 0 20px 15px;
 	border-color: transparent transparent white transparent;
 	bottom: 20px;
-	left: -20px;
+	left: -15px;
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
 .col-right blockquote::after {
-	border-width: 20px 0 0 20px;
+	border-width: 20px 0 0 15px;
 	border-color: transparent transparent transparent white;
 	bottom: 20px;
-	right: -20px;
+	right: -15px;
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
@@ -202,8 +204,11 @@ blockquote {
 
 
 .wrapper {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 20px;
+
+	@include media-query($on-mobile) {
+		padding: 0 15px;
+	}
 }
 
 
@@ -318,6 +323,7 @@ blockquote {
 .page-nav {
 	text-align: center;
 	border-top: $horizontal-line;
+	border-image: url('images/dotted-line.png') 1 0 0 0 repeat;
 	margin-top: $spacing-unit;
 	padding-top: $spacing-unit /2;
 	font-size: $smaller-font-size;
@@ -332,6 +338,7 @@ blockquote {
 		text-align: center;
 		padding-top: 10px;
 		border-top: $horizontal-line;
+		border-image: url('images/dotted-line.png') 1 0 0 0 repeat;
 		font-size: $smallest-font-size;
 	}
 	
@@ -448,8 +455,20 @@ body.subpage {
 			background-color: $brand-color-green;
 		}
 		
+		.page-nav {
+			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
+		}
+		
+		.lead-text {
+			border-image: url('images/dotted-line-white.png') 1 0 1 0 round;
+		}
+		
 		.btn {
 			background: darken($brand-color-green,10%);
+		}
+		
+		hr {
+			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 		}
 	}
 }
@@ -461,6 +480,7 @@ body.home, body.subpage-green {
 	
 		.footer-content {
 			border-top-color: white;
+			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 			
 			a {
 				color: white;
