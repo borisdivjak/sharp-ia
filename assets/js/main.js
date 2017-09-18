@@ -62,20 +62,28 @@ $(function() {
 	// ROUTING: sammy is the routing function	
 	$.sammy(function() {
 
+		function onLoadAlways() {
+			$(window).resize(); // on load completecall resize to resize video iframes
+			$(window).scrollTop(0);
+			animateVisible();
+			
+			// set target _blank for external hyperlinks (i.e. all links beginning with http...)
+			$('a[href^="http"]').attr('target', '_blank');
+		}
+
 		this.get('/', function() {
 			$('main.page-content').load( 'home-content.html', function() {
 				$('body').attr('class', bodyclass + 'home');
-				$(window).scrollTop(0);
 				$('.home-item').addClass('animate-when-visible');
-				animateVisible();
+				onLoadAlways();
 			});
 		});
 
 	  this.get('#:page_title', function() {
 			$('main.page-content').load( this.params['page_title'] + '.html', function() {
 				$('body').attr('class', bodyclass + $('.subpage-main').data('body-class'));
-				$(window).scrollTop(0);
-				$(window).resize(); // on load completecall resize to resize video iframes
+
+				//animate qootes
 				$('blockquote, .chart').addClass('animate-when-visible');
 				
 				// add functionality for collapsible sections
@@ -112,8 +120,6 @@ $(function() {
 
 					// create chart, but true data will only be loaded on animateVisible
 					var chart = c3.generate(data);	
-					console.log(chart);					
-//					chart.legend.item.onmouseover = function() {};
 					charts.push(chart);
 				});
 				
@@ -126,7 +132,7 @@ $(function() {
 					}});
 				});
 				
-				animateVisible(); // finally, trigger the animations on visible elements
+				onLoadAlways();
 			}); 
 	  });
 
