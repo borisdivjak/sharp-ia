@@ -5,10 +5,12 @@ $(function() {
 		// first trigger charts (load real data)
 		$('.chart.animate-when-visible').each(function(index, element) {
 			if ($(element).visible(true)) {
-				chart = $(element).data('c3-chart');
+				var chart = $(element).data('c3-chart');
 				
-				var real_data = $.parseJSON($(element).attr('data'));			
-				chart.load(real_data.data);
+				if (chart) {
+					var real_data = $.parseJSON($(element).attr('data'));			
+					chart.load(real_data.data);
+				}
 				$(element).removeClass('animate-when-visible');
 			}
 		});
@@ -118,6 +120,19 @@ $(function() {
 				});
 				
 				
+				// chart data toggle buttons  
+				$('.btn-data-toggler').on('click', function(e) {
+					e.preventDefault();
+					var chart_element = $('.' + $(e.target).attr('data-chart')).get(0); // select by class
+					var chart = $(chart_element).data('c3-chart');
+					var data = $.parseJSON($(chart_element).attr('data'))[$(e.target).attr('data-set')];			
+					
+					if (chart && data) {
+						chart.load(data);
+					}
+				});
+				
+								
 				// load SVGs (e.g. diagrams etc.)
 				$('.svg-wrapper').each(function(index, element) {
 					$(element).svg({ loadURL: $(element).attr('data-filename'), onLoad: function() {

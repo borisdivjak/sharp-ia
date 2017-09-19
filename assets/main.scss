@@ -256,10 +256,21 @@ blockquote {
 	font-size: ceil($base-font-size * 1.05);
 	padding: 15px 40px;
 	margin: 10px;
-  text-decoration: none !important;
-  font-weight: 500;
-  border-radius: 30px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .05);
+	text-decoration: none !important;
+	font-weight: 500;
+	border-radius: 30px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .05);
+}
+
+.btn-data-toggler {
+	font-size: $smaller-font-size;
+	padding: 5px 20px;
+	margin: 0 5px 5px;
+}
+
+.button-group {
+	text-align: center;
+	padding-bottom: $spacing-unit;
 }
 
 // fun hover stuff

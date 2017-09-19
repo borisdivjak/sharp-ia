@@ -26,16 +26,31 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 {
   "bindto": ".chart-bed-days",
   "padding": {
-	  "bottom": 20,
 	  "top": 60
   },
   "data": {  
     "columns": [
-			["6 months BEFORE first episode", 2722771, 897558],
-			["6 months AFTER first episode", 1079684, 611087]
+		["before", 2722771, 897558],
+		["after", 1079684, 611087]
     ],
     "type" : "bar",
-    "labels": true
+    "labels": true,
+	"names": {
+		"before": "6 months BEFORE first episode",
+		"after": "6 months AFTER first episode"
+	}
+  },
+  "data_12": {  
+    "columns": [
+		["before", 5722771, 1097558],
+		["after", 2079684, 1211087]
+    ],
+    "type" : "bar",
+    "labels": true,
+	"names": {
+		"before": "12 months BEFORE first episode",
+		"after": "12 months AFTER first episode"
+	}
   },
   "axis": {
 	  "x": {
@@ -47,10 +62,10 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 	  }
   },
   "color": {
-		"pattern": ["#ffffff","#155b8b",  "#e1007f","ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+		"pattern": ["#ffffff","#155b8b", "#ffffff","#155b8b",  "#e1007f", "#6ba025", "#d62728",  "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
 	},
 	"transition": {
-		"duration": 2000
+		"duration": 1500
 	},
 	"size": {
     "height": 400
@@ -78,8 +93,20 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 }
 '></div>
 
+<div class="button-group">
+	<a class="btn btn-data-toggler" data-chart="chart-bed-days" data-set="data" href="#">6 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="chart-bed-days" data-set="data_12" href="#">12 months period</a> 
+</div>
 
 {% endcapture %}
+
+
+
+
+
+
+
+
 
 
 {% capture column2 %}
