@@ -27,6 +27,15 @@ $(function() {
 			}
 		});		
 	}
+	
+	function formatC3Labels(data) {
+		data.labels = {format: {}};
+		for (i=0; i < data.columns.length; i++) {
+			data.labels.format[data.columns[i][0]] = d3.format(',.');
+		}
+		
+		return data;
+	}
 
 
 
@@ -114,6 +123,11 @@ $(function() {
 						}
 					}
 
+					// format numbers in bar charts a bit
+					if (data.data.type == 'bar') {
+						data.data = formatC3Labels(data.data);
+					}
+
 					// create chart, but true data will only be loaded on animateVisible
 					var chart = c3.generate(data);	
 					$(this).data('c3-chart', chart);
@@ -128,6 +142,7 @@ $(function() {
 					var data = $.parseJSON($(chart_element).attr('data'))[$(e.target).attr('data-set')];			
 					
 					if (chart && data) {
+						console.log(data);
 						chart.load(data);
 					}
 				});
