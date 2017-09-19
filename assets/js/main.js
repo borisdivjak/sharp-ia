@@ -1,20 +1,14 @@
 $(function() {
 	var bodyclass = '';
-	var charts = [];
-
 
 	function animateVisible() {
 		// first trigger charts (load real data)
 		$('.chart.animate-when-visible').each(function(index, element) {
 			if ($(element).visible(true)) {
-				var chart_index = 0;
-
-				for (i = 0; i < charts.length; i ++) {
-					if (charts[i].element == element) chart_index = i;
-				}
+				chart = $(element).data('c3-chart');
 				
 				var real_data = $.parseJSON($(element).attr('data'));			
-				charts[chart_index].load(real_data.data);
+				chart.load(real_data.data);
 				$(element).removeClass('animate-when-visible');
 			}
 		});
@@ -108,7 +102,7 @@ $(function() {
 				});
 
 				// load charts
-				$('.chart').each(function(index, element) {
+				$('.chart').each( function(index, element) {
 					var data = $.parseJSON($(element).attr('data'));
 					
 					// reset all data points to 0 (for a nice animation on delayed load)
@@ -120,8 +114,9 @@ $(function() {
 
 					// create chart, but true data will only be loaded on animateVisible
 					var chart = c3.generate(data);	
-					charts.push(chart);
+					$(this).data('c3-chart', chart);
 				});
+				
 				
 				// load SVGs (e.g. diagrams etc.)
 				$('.svg-wrapper').each(function(index, element) {
