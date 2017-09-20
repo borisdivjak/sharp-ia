@@ -218,6 +218,13 @@ blockquote {
 
 .col-6 {
 	width: 50%;
+}
+
+.col-4 {
+	width: 33.333%;
+}
+
+.col-6, .col-4 {
 	box-sizing: border-box;
 	float: left;
 	padding: 0 ($gutter-width / 2);
@@ -226,6 +233,8 @@ blockquote {
 		width: 100%;
 	}
 }
+
+
 
 .row {
 	margin: 0 $gutter-width * -0.5;
@@ -238,7 +247,7 @@ blockquote {
 }
 
 
-.col-6 p, .col-6 ul {
+.col-6 p, .col-6 ul, .col-4 p, .col-4 ul {
 	font-size: $smaller-font-size;
 	line-height: $base-line-height;
 }
