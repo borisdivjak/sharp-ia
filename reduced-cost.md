@@ -315,6 +315,16 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 {% capture column2 %}
 
+### Estimated total cost saving over 10 years
+<br />
+
+{% capture main-stat %}£24M{% endcapture %}
+{% capture description %}Estimated saving over 10 years{% endcapture %}
+{% include stat-circle.html %}
+
+Over the last decade SHARP has cost £XX to run p/year so £YY 6 months. We have saved £24,000,000 - 
+£yy = £1.7M Total over and above service costs in bed days saved alone…
+
 {% endcapture %}
 
 
@@ -340,29 +350,65 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 
 
+
+{% capture hidden-section-content %}
+
+### Method
+
 {% capture column1 %}
 
-### Some financial statistics stuff
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis mollis massa. Fusce dictum nunc felis, 
-quis aliquam metus interdum semper. Quisque vitae gravida metus. Donec vel turpis urna. Etiam scelerisque 
-nec enim sed pellentesque. Etiam fringilla ac enim eu ornare. Donec mauris leo, pretium quis ultrices in, 
-venenatis sit amet nunc.
+Episodes (ward and team in the Psychosis CAG) were included if he earliest started after 01/01/2000 (ePJS was fully 
+established by then) and the latest was any starting before the data extraction date of 12/05/2017.  
+For the calculation of duration all episodes still open on the data extraction date were considered closed on that day. 
+No SHARP or team episode was included if it was less than 30 days long, as it was not considered that shorter 
+episodes would have much impact on outcomes.
+
+Patients were divided into the SHARP group -those with any SHARP episode recorded- and the control group- those with none. 
+In the SHARP group the index episode was taken as the first one. Subsequent SHARP episodes were included in analysis as 
+if they were any other later community episode.  To allow  “before-after” comparison, SHARP patients were included only 
+if the index episode started at least 6 months after the start of the earliest episode of treatment (inpatient or community) 
+in the Psychosis CAG and who also had at least 6 months after the start of their index episode during which the start of 
+any subsequent admission or community episode had been recorded.  If no team episode or admission occurred within 6 months 
+of the start of the index episode the patient was not included, as we did not know whether the patient had moved to another 
+area rather than stopped needing Trust services.
+
+Monte Carlo testing was carried out 1000 times. On each occasion control patients were selected from those with no 
+SHARP episodes by random selection with no replacement of index community episodes.  Like the index episode in SHARP 
+patients, these were included if the index episode started at least 6 months after the start of the earliest episode 
+of treatment (inpatient or community) in the Psychosis CAG and who also had at least 6 months after the start of their 
+index episode during which the start of any subsequent admission or community episode would have been recorded. 
+Episodes starting before SHARP began in 2006 were not sampled. Random selection was repeated until the number of 
+control patients with an index episode at least 6 months after the start of the earliest episode of treatment 
+(inpatient or community) in the Psychosis CAG and who also had at least 6 months after discharge from/the start of their 
+index episode during which the start of any subsequent admission or community episode would have been recorded. 
+was equal to the same number of equivalent SHARP patients.  Control patients had only one index episode.
+
 
 {% endcapture %}
+
 
 
 {% capture column2 %}
 
-{% capture main-stat %}£2.5M{% endcapture %}
-{% capture description %}Estimated yearly saving to the trust{% endcapture %}
-{% include stat-circle.html %}
+On each iteration, for both SHARP and control patients, the number of community and inpatient episodes of care, 
+including any active 6 months prior to the start of their index episode, was compared with the number of community and 
+inpatient episodes of care starting within 6 months after the start of their index episode, including any active at this point. 
+The number of days active with a community team and spent in an inpatient unit in the 6 months before and after the start 
+of the index episode were counted and similarly compared.   Days active with more than one community team were added together. 
+The Figure shows the permutations of the relationship between episode start and end and days included in or excluded from analysis.
+
+![Method](assets/images/method-figure.gif "Method") 
 
 {% endcapture %}
 
 
-{% include section-two-columns.html %}
 
+{% include section-two-columns.html classes="tiny-text" %}
+
+{% endcapture %}
+
+{% include hidden-section.html title="method of analysis" %}
 
 
 

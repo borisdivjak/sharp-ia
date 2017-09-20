@@ -27,6 +27,7 @@ $brand-color-blue: 				#40a7e7 !default;  // blue
 $brand-color-green:    		#90d03b !default;  // green
 $brand-color-dark-grey: 	#333333 !default;  // dark grey
 $brand-color-light-blue:	#ebf5fc !default;  // light blue
+$brand-color-dark-blue:		#155b8b !default;  // dark blue
 $brand-color:			 $brand-color-blue;	// link color !
 
 $grey-color:       #828282 !default;
@@ -411,6 +412,10 @@ blockquote {
 	}
 }
 
+.subpage-green .hidden-section-toggle::before {
+	background: darken($brand-color-green,10%);
+}
+
 // when content shown
 .hidden-section.show .hidden-section-toggle {  
 	&::before {
@@ -703,7 +708,8 @@ body.hover-animation {
 
 
 .stat-circle {
-	background: darken($brand-color-green, 8%);
+//	background: darken($brand-color-green, 8%);
+	background: $brand-color-dark-blue;
 	height: 200px;
 	width: 200px;
 	margin: 8px auto;
