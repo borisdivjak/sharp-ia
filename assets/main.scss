@@ -91,7 +91,7 @@ h2 {
 
 h3 {
 	font-size: $base-font-size;
-	line-height: $base-line-height;
+	line-height: $base-line-height * 0.95;
 }
 
 h4 {

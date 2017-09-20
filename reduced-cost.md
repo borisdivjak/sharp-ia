@@ -15,25 +15,37 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 {% include section-lead-text.html %}
 
 
+### Analysis of impact of SHARP treatment on subsequent hospital admissions using resampling
+
+<hr />
+
+
+
+
+
+
+
+
 
 
 
 {% capture column1 %}
 
-### 61% reduction in team episodes after first SHARP episode
+### Average number of bed days
 
 <div class="chart chart-bed-days chart-type-bar" data='
 {
   "bindto": ".chart-bed-days",
   "padding": {
-	  "top": 60
+	  "top": 60,
+	  "bottom": 10
   },
   "data": {  
     "columns": [
-		["before", 2722771, 897558],
-		["after", 1079684, 611087]
+		["before", 84401, 66295],
+		["after", 25505, 35070]
     ],
-    "type" : "bar",
+    "type": "bar",
     "labels": true,
 	"names": {
 		"before": "6 months BEFORE first episode",
@@ -42,8 +54,8 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
   },
   "data_12": {  
     "columns": [
-		["before", 5722771, 1097558],
-		["after", 2079684, 1211087]
+		["before", 119806, 88402],
+		["after", 99376, 105690]
     ],
     "type" : "bar",
     "labels": true,
@@ -111,22 +123,38 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 {% capture column2 %}
 
-### 61% reduction in team episodes after first SHARP episode
+### Average number of in patient episodes 
 
-<div class="chart chart-bed-days2 chart-type-bar" data='
+<div class="chart chart-episodes chart-type-bar" data='
 {
-  "bindto": ".chart-bed-days2",
+  "bindto": ".chart-episodes",
   "padding": {
-	  "bottom": 20,
-	  "top": 60
+	  "top": 60,
+	  "bottom": 10
   },
   "data": {  
     "columns": [
-			["6 months BEFORE first episode", 2722771, 897558],
-			["6 months AFTER first episode", 1079684, 611087]
+		["before", 370, 331],
+		["after", 180, 275]
+    ],
+    "type": "bar",
+    "labels": true,
+	"names": {
+		"before": "6 months BEFORE first episode",
+		"after": "6 months AFTER first episode"
+	}
+  },
+  "data_12": {  
+    "columns": [
+		["before", 461, 396],
+		["after", 319, 366]
     ],
     "type" : "bar",
-    "labels": true
+    "labels": true,
+	"names": {
+		"before": "12 months BEFORE first episode",
+		"after": "12 months AFTER first episode"
+	}
   },
   "axis": {
 	  "x": {
@@ -138,10 +166,10 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 	  }
   },
   "color": {
-		"pattern": ["#ffffff","#155b8b",  "#e1007f","ffffff", "#d62728",  "#6ba025", "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+		"pattern": ["#ffffff","#155b8b", "#ffffff","#155b8b",  "#e1007f", "#6ba025", "#d62728",  "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
 	},
 	"transition": {
-		"duration": 2000
+		"duration": 1500
 	},
 	"size": {
     "height": 400
@@ -169,15 +197,147 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 }
 '></div>
 
+<div class="button-group">
+	<a class="btn btn-data-toggler" data-chart="chart-episodes" data-set="data" href="#">6 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="chart-episodes" data-set="data_12" href="#">12 months period</a> 
+</div>
 
 {% endcapture %}
 
 
 {% include section-two-columns.html %}
 
-<p class="source">Source: Some study conducted by SLaM or Something Else (2014)</p>
+
+
+
+
 
 <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+{% capture column1 %}
+
+### Estimated cost saving in bed days over 10 years
+
+<div class="chart chart-cost-saving chart-type-bar" data='
+{
+  "bindto": ".chart-cost-saving",
+  "padding": {
+	  "top": 60,
+	  "bottom": 10
+  },
+  "data": {  
+    "columns": [
+		["after", 24795216, 13145670]
+    ],
+    "type": "bar",
+    "labels": true,
+	"names": {
+		"after": "based on reduced bed days 6 months after first episode"
+	}
+  },
+  "data_12": {  
+    "columns": [
+		["after", 8601030, -7278555]
+    ],
+    "type" : "bar",
+    "labels": true,
+	"names": {
+		"after": "based on reduced bed days 12 months after first episode"
+	}
+  },
+  "axis": {
+	  "x": {
+	    "type": "category",
+	    "categories": ["SHARP", "Control"]
+	  },
+	  "y": {
+	    "show": false
+	  }
+  },
+  "color": {
+		"pattern": ["#ffffff","#155b8b",  "#e1007f", "#6ba025", "#d62728",  "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
+	},
+	"transition": {
+		"duration": 1500
+	},
+	"size": {
+    "height": 400
+	},
+	"legend": {
+	  "position": "inset",
+		"inset": {
+	    "anchor": "top-left",
+	    "x": -5,
+	    "y": -60,
+	    "step": 3
+		}
+  },
+  "tooltip": {
+	  "show": false
+  },
+  "interaction": {
+	  "enabled": false
+  },
+	"grid": {
+    "y": {
+	    "show": true
+    }
+	}
+}
+'></div>
+
+<div class="button-group">
+	<a class="btn btn-data-toggler" data-chart="chart-cost-saving" data-set="data" href="#">6 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="chart-cost-saving" data-set="data_12" href="#">12 months period</a> 
+</div>
+
+{% endcapture %}
+
+
+
+
+
+
+
+
+
+
+{% capture column2 %}
+
+{% endcapture %}
+
+
+{% include section-two-columns.html %}
+
+
+
+
+
+<p class="source">Source: McDonald & Josefsberg, unpublished</p>
+
+<hr />
+
+
+
+
+
+
+
+
+
+
+
 
 
 {% capture column1 %}
