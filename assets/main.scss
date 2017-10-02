@@ -838,3 +838,30 @@ iframe[data-iframe-type="gmaps"] {
 	}
 }
 
+
+// TABLES
+
+
+
+table {
+	border-collapse: separate;
+	border-spacing: 0px;
+	font-size: $small-font-size;
+	line-height: $base-line-height;
+		
+	td {
+		border-top: 1px solid white;
+		border-image: url('images/dotted-line-white.png') 1 0 1 0 repeat;
+		vertical-align: top;
+		padding: 8px;		
+	}
+
+	tr:first-child td {
+		border-top: none;
+	}
+	
+	body.subpage-green & {
+		background: darken($brand-color-green, 5%);
+	}
+}
+

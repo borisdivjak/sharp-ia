@@ -227,13 +227,13 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 {% capture column1 %}
 
-### Estimated cost saving in bed days over 10 years
+### Estimated cost saving over 10 years
 
-| Number of bed days saved SHARP vs Comparison Group	                  | 37,718         |
-| Cost per bed day (acute ward)	                                        | £421           |
-| Saved in bed days over 10 years	                                      | £15,879,278    |
-|	Difference between cost of SHARP vs Comparison Group (10 years)       | £4,037,127     |
-| Total estimated saving for 10 years	                                  | £11,842,457    |
+| Number of bed days saved <br /> (SHARP vs Comparison Group)				| 37,718			|
+| Cost per bed day (acute ward)												| £421				|
+| Saved in bed days over 10 years <br />(SHARP vs Comparison Group)			| £15,879,278		|
+| Difference between cost of SHARP and Comparison Group (10 years)			| -£4,037,127		|
+| **Total estimated saving for 10 years <br />(SHARP vs Comparison Group)**	| **£11,842,457**	|
 
 {% endcapture %}
 
@@ -247,16 +247,13 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 
 {% capture column2 %}
-
-### Estimated total cost saving over 10 years
 <br />
 
 {% capture main-stat %}£11.8M{% endcapture %}
 {% capture description %}Estimated saving over 10 years{% endcapture %}
 {% include stat-circle.html %}
 
-Over the last decade SHARP has cost £XX to run p/year so £YY 6 months. We have saved £24,000,000 - 
-£yy = £1.7M Total over and above service costs in bed days saved alone…
+Over the last decade SHARP has saved an estimated £11.8M when compared to costs and impact of services in the comparison group.
 
 {% endcapture %}
 
@@ -267,11 +264,11 @@ Over the last decade SHARP has cost £XX to run p/year so £YY 6 months. We have
 
 
 
-<p class="source">Source: McDonald & Josefsberg, unpublished</p>
 
 <hr />
 
 
+<p class="source">Source: McDonald & Josefsberg, unpublished</p>
 
 
 
