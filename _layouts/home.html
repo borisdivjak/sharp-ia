@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="home">
+<body class="home">
 
-		<header class="site-header" role="banner">
-		  <div class="wrapper">
-				<a class="home-link" href="./">
-					<div class="sharp-logo">
-						<img src="assets/images/sharp-logo.gif" width="82" height="82">
-					</div>
-				  <h1 class="site-header-title">{{ site.title }}</h1>
-				</a>
-				
-				<div class="slam-logo">
-					<img src="assets/images/slam-logo.gif" width="60" height="40">
+	<header class="site-header" role="banner">
+		<div class="wrapper">
+			<a class="home-link" href="./">
+				<div class="sharp-logo">
+					<img src="assets/images/sharp-logo.gif" width="82" height="82">
 				</div>
-		  </div>
-		  
-		</header>
+				<h1 class="site-header-title">{{ site.title }}</h1>
+			</a>
+			
+			<div class="slam-logo">
+				<img src="assets/images/slam-logo.gif" width="60" height="40">
+			</div>
+		</div>
+	  
+	</header>
 
     <main class="main page-content" aria-label="Content">
-	  </main>
+		<!--[if lt IE 9]>
+		<div class="wrapper ie8">
+			<h2>Your browser is out of date</h2>
+			<p>Please upgrade your browser. The SHARP Impact Assessment works in all modern browsers, including Internet Explorer 9 or greater.</p>
+		</div>
+		<![endif]-->
+	</main>
 
     {% include footer.html %}
 
   </body>
-
 </html>
