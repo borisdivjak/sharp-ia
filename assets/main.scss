@@ -509,6 +509,19 @@ body.subpage {
 			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 		}
 	}
+	
+	&.subpage-authors {
+		.site-header, .main.page-content, .site-footer, .page-nav {
+			background-color: white;
+		}
+		
+		.subpage-main {
+			text-align: center;
+			padding-top: 0;
+			font-size: $small-font-size;
+			line-height: $base-line-height;
+		}
+	}
 }
 
 

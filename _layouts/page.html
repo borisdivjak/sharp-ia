@@ -15,17 +15,21 @@
 		  {% assign items = items | push: item %}
 		{% endfor %}
 
+		{% assign next_found = false %}
 		{% for item in items  %}
-				{% assign path = item.link | remove: "#" | append: ".md" %}
+			{% assign path = item.link | remove: "#" | append: ".md" %}
 		    {% if path == page.path %}
-            {% if forloop.last != true %}
-            	<a class="btn btn-next" href="{{ items[forloop.index].link }}">Next &rarr;</a><br />
-							or <a href="./">back to home</a>
-						{% else %}
-							<a class="btn" href="./">Back to home</a>
-	          {% endif %}
+				{% if forloop.last != true %}
+					{% assign next_found = true %}
+					<a class="btn btn-next" href="{{ items[forloop.index].link }}">Next &rarr;</a><br />
+					or <a href="./">back to home</a>
+				{% endif %}
 		    {% endif %}
 		{% endfor %}
+
+		{% if next_found == false %}
+			<a class="btn" href="./">Back to home</a>
+		{% endif %}
 		
 	</div>
 </div>
