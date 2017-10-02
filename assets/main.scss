@@ -377,6 +377,7 @@ blockquote {
 
 .page-content {
 	padding: 0;
+  display: block; // for some reason need this for IE9
 }
 
 .subpage .page-content {
@@ -461,7 +462,7 @@ body.subpage {
 	}
 
 	.site-header {
-		background: #ebf5fc url('images/header-triangle.png') center bottom/100% 200px no-repeat;
+		background: $brand-color-light-blue url('images/header-triangle.png') center bottom/100% 200px no-repeat;
 
 		@include media-query($on-palm) {
 			background-size: 1000px 200px;
