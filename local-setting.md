@@ -32,7 +32,7 @@ Of those who are seen and assessed by SHARP over the last decade 70% have gone o
 in therapy. 
 
 A high proportion of those we have managed to engage and work with have come 
-from Lambeth’s BME community.
+from and are representative of Lambeth’s BME community.
 
 > "Even on a bad day, it’s easy to get to you know? That helps get me out."
 > - Person who has used Sharp services 

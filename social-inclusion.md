@@ -8,7 +8,7 @@ body-class: subpage-green
 
 {% capture content %}
 SHARP plays an integral part in building and sustaining communities, networks and supports for people 
-in Lambeth who experience psychosis. The people we work with experience severe and enduring illness 
+in Lambeth who experience psychosis. The people the team works with experience severe and enduring illness 
 that impacts their lives on a daily basis. SHARP support people in their recovery and build strengthen 
 the core economy through increasing people’s resilience and independence. By providing opportunities to 
 learn and take calculated risks we help build and strengthen people’s support to access their local community.

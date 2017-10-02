@@ -73,9 +73,9 @@ We have successfully partnered with over 50 organisations including voluntary se
 - Canterbury college
 - Canterbury University
 - Institute of Psychiatry, Psychology and Neurosciences (IOPPN)
-- King's College London
+- King's College University – Clinical Psychology
 - London South Bank university
-- Placement Management Partnership
+- OT Placement Management Partnership
 - South Bank University
 
 {% endcapture %}
