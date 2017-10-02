@@ -151,6 +151,8 @@ $(function() {
 				// load SVGs (e.g. diagrams etc.)
 				$('.svg-wrapper').each(function(index, element) {
 					$(element).svg({ loadURL: $(element).attr('data-filename'), onLoad: function() {
+						$('svg style').append(' '); // this is necessary to trigger styles in IE9 due to a bug when loading SVG dynamically
+
 						// animate elemenets when loaded
 						$('svg').addClass('animate-when-visible'); 
 						animateVisible();
