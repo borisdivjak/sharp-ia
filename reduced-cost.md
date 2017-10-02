@@ -67,7 +67,7 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
   "axis": {
 	  "x": {
 	    "type": "category",
-	    "categories": ["SHARP", "Control"]
+	    "categories": ["SHARP", "Comparison group"]
 	  },
 	  "y": {
 	    "show": false
@@ -159,7 +159,7 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
   "axis": {
 	  "x": {
 	    "type": "category",
-	    "categories": ["SHARP", "Control"]
+	    "categories": ["SHARP", "Comparison group"]
 	  },
 	  "y": {
 	    "show": false
@@ -229,78 +229,11 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 ### Estimated cost saving in bed days over 10 years
 
-<div class="chart chart-cost-saving chart-type-bar" data='
-{
-  "bindto": ".chart-cost-saving",
-  "padding": {
-	  "top": 60,
-	  "bottom": 10
-  },
-  "data": {  
-    "columns": [
-		["after", 24795216, 13145670]
-    ],
-    "type": "bar",
-    "labels": true,
-	"names": {
-		"after": "based on reduced bed days 6 months after first episode"
-	}
-  },
-  "data_12": {  
-    "columns": [
-		["after", 8601030, -7278555]
-    ],
-    "type" : "bar",
-    "labels": true,
-	"names": {
-		"after": "based on reduced bed days 12 months after first episode"
-	}
-  },
-  "axis": {
-	  "x": {
-	    "type": "category",
-	    "categories": ["SHARP", "Control"]
-	  },
-	  "y": {
-	    "show": false
-	  }
-  },
-  "color": {
-		"pattern": ["#ffffff","#155b8b",  "#e1007f", "#6ba025", "#d62728",  "#ffcd34", "#a2d4f7", "#ff9896", "#9467bd"]
-	},
-	"transition": {
-		"duration": 1500
-	},
-	"size": {
-    "height": 400
-	},
-	"legend": {
-	  "position": "inset",
-		"inset": {
-	    "anchor": "top-left",
-	    "x": -5,
-	    "y": -60,
-	    "step": 3
-		}
-  },
-  "tooltip": {
-	  "show": false
-  },
-  "interaction": {
-	  "enabled": false
-  },
-	"grid": {
-    "y": {
-	    "show": true
-    }
-	}
-}
-'></div>
-
-<div class="button-group">
-	<a class="btn btn-data-toggler" data-chart="chart-cost-saving" data-set="data" href="#">6 months period</a> 
-	<a class="btn btn-data-toggler" data-chart="chart-cost-saving" data-set="data_12" href="#">12 months period</a> 
-</div>
+| Number of bed days saved SHARP vs Comparison Group	                  | 37,718         |
+| Cost per bed day (acute ward)	                                        | £421           |
+| Saved in bed days over 10 years	                                      | £15,879,278    |
+|	Difference between cost of SHARP vs Comparison Group (10 years)       | £4,037,127     |
+| Total estimated saving for 10 years	                                  | £11,842,457    |
 
 {% endcapture %}
 
@@ -318,7 +251,7 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 ### Estimated total cost saving over 10 years
 <br />
 
-{% capture main-stat %}£24M{% endcapture %}
+{% capture main-stat %}£11.8M{% endcapture %}
 {% capture description %}Estimated saving over 10 years{% endcapture %}
 {% include stat-circle.html %}
 
@@ -364,7 +297,7 @@ For the calculation of duration all episodes still open on the data extraction d
 No SHARP or team episode was included if it was less than 30 days long, as it was not considered that shorter 
 episodes would have much impact on outcomes.
 
-Patients were divided into the SHARP group -those with any SHARP episode recorded- and the control group- those with none. 
+Patients were divided into the SHARP group -those with any SHARP episode recorded- and the comparison group- those with none. 
 In the SHARP group the index episode was taken as the first one. Subsequent SHARP episodes were included in analysis as 
 if they were any other later community episode.  To allow  “before-after” comparison, SHARP patients were included only 
 if the index episode started at least 6 months after the start of the earliest episode of treatment (inpatient or community) 
@@ -373,16 +306,16 @@ any subsequent admission or community episode had been recorded.  If no team epi
 of the start of the index episode the patient was not included, as we did not know whether the patient had moved to another 
 area rather than stopped needing Trust services.
 
-Monte Carlo testing was carried out 1000 times. On each occasion control patients were selected from those with no 
+Monte Carlo testing was carried out 1000 times. On each occasion patients for the comparison group were selected from those with no 
 SHARP episodes by random selection with no replacement of index community episodes.  Like the index episode in SHARP 
 patients, these were included if the index episode started at least 6 months after the start of the earliest episode 
 of treatment (inpatient or community) in the Psychosis CAG and who also had at least 6 months after the start of their 
 index episode during which the start of any subsequent admission or community episode would have been recorded. 
 Episodes starting before SHARP began in 2006 were not sampled. Random selection was repeated until the number of 
-control patients with an index episode at least 6 months after the start of the earliest episode of treatment 
+patients in the comparison group with an index episode at least 6 months after the start of the earliest episode of treatment 
 (inpatient or community) in the Psychosis CAG and who also had at least 6 months after discharge from/the start of their 
 index episode during which the start of any subsequent admission or community episode would have been recorded. 
-was equal to the same number of equivalent SHARP patients.  Control patients had only one index episode.
+was equal to the same number of equivalent SHARP patients. Patients in the comparison group had only one index episode.
 
 
 {% endcapture %}
@@ -391,7 +324,7 @@ was equal to the same number of equivalent SHARP patients.  Control patients had
 
 {% capture column2 %}
 
-On each iteration, for both SHARP and control patients, the number of community and inpatient episodes of care, 
+On each iteration, for both SHARP and patients from the comparison group, the number of community and inpatient episodes of care, 
 including any active 6 months prior to the start of their index episode, was compared with the number of community and 
 inpatient episodes of care starting within 6 months after the start of their index episode, including any active at this point. 
 The number of days active with a community team and spent in an inpatient unit in the 6 months before and after the start 
