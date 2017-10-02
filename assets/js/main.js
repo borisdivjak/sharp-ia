@@ -142,7 +142,6 @@ $(function() {
 					var data = $.parseJSON($(chart_element).attr('data'))[$(e.target).attr('data-set')];			
 					
 					if (chart && data) {
-						console.log(data);
 						chart.load(data);
 					}
 				});
