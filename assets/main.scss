@@ -69,10 +69,15 @@ $horizontal-line:	 1px dotted black;
 @import "base";
 
 
+// RESET
+
+img {
+  border: none; // to remove image link borders in IE9
+}
+
 
 
 // TYPOGRAPHY
-
 
 
 h1, h2, h3 {
