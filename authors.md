@@ -14,5 +14,5 @@ Video editing:
 **[Nathaniel Thompson](https://vimeo.com/nathanielthompson)**
 
 Special thanks to:  
-**The SHARP team, Alistair MacDonald, ...**
+**The SHARP team, Alastair Macdonald, ...**
 
