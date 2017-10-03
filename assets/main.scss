@@ -494,10 +494,12 @@ body.subpage {
 		}
 		
 		.page-nav {
+			border-color: white;
 			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 		}
 		
 		.lead-text {
+			border-color: white;
 			border-image: url('images/dotted-line-white.png') 1 0 1 0 round;
 		}
 		
@@ -506,6 +508,7 @@ body.subpage {
 		}
 		
 		hr {
+			border-color: white;
 			border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 		}
 	}
@@ -863,14 +866,15 @@ table {
 	line-height: $base-line-height;
 		
 	td {
+		border: 0px;
 		border-top: 1px solid white;
-		border-image: url('images/dotted-line-white.png') 1 0 1 0 repeat;
+		border-image: url('images/dotted-line-white.png') 1 0 0 0 repeat;
 		vertical-align: top;
 		padding: 8px;		
 	}
 
 	tr:first-child td {
-		border-top: none;
+		border-top: 0px;
 	}
 	
 	body.subpage-green & {
