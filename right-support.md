@@ -14,22 +14,14 @@ A broad range of interventions and wellbeing initiatives are also offered in par
 {% include section-lead-text.html %}
 
 
-
-
 {% capture column1 %}
 
-![Mind, Body, Flow](assets/images/mind-body-flow.gif "Mind, Body, Flow")
+### Single point of entry
 
 Benefits of SHARP service include its single point of entry for multiple interventions – one assessment 
-to access all. This also benefits people in that all interventions all offered at one place- process 
+to access all. This also benefits people in that all interventions all offered at one place – process 
 of getting to know and feel comfortable with staff enabling confidence to explore other interventions i.e. 
 CBT for psychosis, SIT.
-
-{% endcapture %}	
-
-
-
-{% capture column2 %}
 
 > "Really impressed, they provided a wide range of things I could participate in."
 
@@ -37,6 +29,14 @@ CBT for psychosis, SIT.
 > and marked the difference to what we had been offered in the past. The service we received 
 > was totally personalised, supporting both our needs in a way that was totally respectful." 
 > - carer
+
+{% endcapture %}	
+
+
+
+{% capture column2 %}
+
+<div class="svg-wrapper" data-filename="assets/images/sharp-single-entry.svg" style="height: 700px"></div>
 
 {% endcapture %}
 
