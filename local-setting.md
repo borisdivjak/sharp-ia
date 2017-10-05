@@ -42,12 +42,24 @@ from and are representative of Lambeth’s BME community.
 
 {% capture column2 %}
 
-Percentage ethnicity attending SHARP out of total caseload (SHARP data base)  
+<h4 class="chart-toggle-text" data-chart="#chart-bme" data-set="data">Ethnicity of people attending SHARP out of total caseload (SHARP database)</h4>
+<h4 class="chart-toggle-text" data-chart="#chart-bme" data-set="data_lambeth">Ethnicity of people accessing secondary mental health services for psychosis in Lambeth (ePJS, 2017)</h4>
 
-<div class="chart chart-bme" data='
+<div id="chart-bme" class="chart" data='
 {
-  "bindto": ".chart-bme",
+  "bindto": "#chart-bme",
   "data": {  
+    "columns": [
+			["White", 39.1],
+			["Black", 45.7],
+			["Asian", 5.7],
+			["Mixed", 3.8],
+			["Other", 5.7]
+    ],
+    "type" : "pie",
+    "order": null
+  },
+  "data_lambeth": {  
     "columns": [
 			["White", 29.4],
 			["Black", 57.2],
@@ -55,19 +67,27 @@ Percentage ethnicity attending SHARP out of total caseload (SHARP data base)
 			["Mixed", 4.4],
 			["Other", 5.2]
     ],
-    "type" : "pie"
+    "type" : "pie",
+    "order": null    
   },
   "color": {
 		"pattern": ["#a2d4f7", "#155b8b", "#f99a00", "#e1007f", "#95c705",  "#98df8a", "#d62728", "#ff9896", "#9467bd"]
 	},
 	"transition": {
-		"duration": 2000
+		"duration": 1500
 	},
 	"size": {
     "height": 400
 	}
 }
 '></div>
+
+
+<div class="button-group">
+	<a class="btn btn-data-toggler" data-chart="#chart-bme" data-set="data" href="#">SHARP</a> 
+	<a class="btn btn-data-toggler" data-chart="#chart-bme" data-set="data_lambeth" href="#">Lambeth average</a> 
+</div>
+
 
 {% endcapture %}
 

@@ -203,7 +203,7 @@ blockquote {
   box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .05);
 }
 
-.source {
+.source, .col-6 .source {
 	font-size: $smallest-font-size;
 	line-height: $base-line-height;
 }
@@ -283,6 +283,15 @@ blockquote {
 	font-size: $smaller-font-size;
 	padding: 5px 20px;
 	margin: 0 5px 5px;
+	box-shadow: none;
+	background: none;
+	border: 1px solid $brand-color-blue;
+	color: $brand-color-blue;
+	
+	&.selected {
+		background: $brand-color-blue;
+		color: white;
+	}
 }
 
 .button-group {
@@ -505,6 +514,16 @@ body.subpage {
 		
 		.btn {
 			background: darken($brand-color-green,10%);
+			
+			&.btn-data-toggler {
+				border: 1px solid white;
+				background: none;
+				
+				&.selected, &:hover {
+					background: white;
+					color: darken($brand-color-green,10%);
+				}
+			}
 		}
 		
 		hr {
@@ -854,6 +873,10 @@ iframe[data-iframe-type="gmaps"] {
 	}
 }
 
+
+.chart-toggle-text:not(.selected) {
+	display: none;
+}
 
 // TABLES
 

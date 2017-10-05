@@ -16,7 +16,7 @@ A broad range of interventions and wellbeing initiatives are also offered in par
 
 {% capture column1 %}
 
-### Single point of entry
+### The whole is more than the sum of it’s parts
 
 Benefits of SHARP service include its single point of entry for multiple interventions – one assessment 
 to access all. This also benefits people in that all interventions all offered at one place – process 

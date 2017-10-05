@@ -33,9 +33,9 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 ### Average number of bed days
 
-<div class="chart chart-bed-days chart-type-bar" data='
+<div id="chart-bed-days" class="chart chart-type-bar" data='
 {
-  "bindto": ".chart-bed-days",
+  "bindto": "#chart-bed-days",
   "padding": {
 	  "top": 60,
 	  "bottom": 10
@@ -106,8 +106,8 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 '></div>
 
 <div class="button-group">
-	<a class="btn btn-data-toggler" data-chart="chart-bed-days" data-set="data" href="#">6 months period</a> 
-	<a class="btn btn-data-toggler" data-chart="chart-bed-days" data-set="data_12" href="#">12 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="#chart-bed-days" data-set="data" href="#">6 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="#chart-bed-days" data-set="data_12" href="#">12 months period</a> 
 </div>
 
 {% endcapture %}
@@ -125,9 +125,9 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 
 ### Average number of in patient episodes 
 
-<div class="chart chart-episodes chart-type-bar" data='
+<div id="chart-episodes" class="chart chart-type-bar" data='
 {
-  "bindto": ".chart-episodes",
+  "bindto": "#chart-episodes",
   "padding": {
 	  "top": 60,
 	  "bottom": 10
@@ -198,8 +198,8 @@ cost savings for the trust over the last decade (McDonald & Josefsberg, unpublis
 '></div>
 
 <div class="button-group">
-	<a class="btn btn-data-toggler" data-chart="chart-episodes" data-set="data" href="#">6 months period</a> 
-	<a class="btn btn-data-toggler" data-chart="chart-episodes" data-set="data_12" href="#">12 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="#chart-episodes" data-set="data" href="#">6 months period</a> 
+	<a class="btn btn-data-toggler" data-chart="#chart-episodes" data-set="data_12" href="#">12 months period</a> 
 </div>
 
 {% endcapture %}

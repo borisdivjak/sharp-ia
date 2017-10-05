@@ -9,6 +9,7 @@ $(function() {
 				
 				if (chart) {
 					var real_data = $.parseJSON($(element).attr('data'));			
+					real_data.data.done = chartDataLoaded(chart, 'data'); // note: 'data' is the name of the default dataset
 					chart.load(real_data.data);
 				}
 				$(element).removeClass('animate-when-visible');
@@ -35,6 +36,14 @@ $(function() {
 		}
 		
 		return data;
+	}
+	
+	function chartDataLoaded(chart, dataset_name) {
+		// select appropriate control buttons when data loaded into chart
+		$('[data-chart="#' + $(chart.element).attr('id') + '"]')  // select buttons that control this chart
+			.removeClass('selected')
+			.filter('[data-set="' + dataset_name + '"]')  // select button for current dataset
+			.addClass('selected');
 	}
 
 
@@ -137,11 +146,12 @@ $(function() {
 				// chart data toggle buttons  
 				$('.btn-data-toggler').on('click', function(e) {
 					e.preventDefault();
-					var chart_element = $('.' + $(e.target).attr('data-chart')).get(0); // select by class
+					var chart_element = $($(e.target).attr('data-chart')).get(0); // select by class
 					var chart = $(chart_element).data('c3-chart');
 					var data = $.parseJSON($(chart_element).attr('data'))[$(e.target).attr('data-set')];			
 					
 					if (chart && data) {
+						data.done = chartDataLoaded(chart, $(e.target).attr('data-set'));
 						chart.load(data);
 					}
 				});

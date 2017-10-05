@@ -67,9 +67,9 @@ increase in wellbeing and activity level.
 
 ### Time budget
 
-<div class="chart chart-time-budget chart-type-bar" data='
+<div id="chart-time-budget" class="chart chart-type-bar" data='
 {
-	"bindto": ".chart-time-budget",
+	"bindto": "#chart-time-budget",
 	"padding": {
 		"bottom": 25
 	},
@@ -147,9 +147,9 @@ The above indicates a significant (p<0.001) increase in activity level.
 
 ### WEMWBS
 
-<div class="chart chart-wemwbs chart-type-bar" data='
+<div id="chart-wemwbs" class="chart chart-type-bar" data='
 {
-	"bindto": ".chart-wemwbs",
+	"bindto": "#chart-wemwbs",
 	"padding": {
 		"bottom": 25
 	},
@@ -223,9 +223,9 @@ Results indicate statistically significant (p< 0.001) improvement in wellbeing s
 
 ### DIALOG
 
-<div class="chart chart-dialog chart-type-bar" data='
+<div id="chart-dialog" class="chart chart-type-bar" data='
 {
-	"bindto": ".chart-dialog",
+	"bindto": "#chart-dialog",
 	"padding": {
 		"bottom": 25
 	},
@@ -349,9 +349,9 @@ show a statistically and functionally significant reduction in distressing psych
 
 ### CORE
 
-<div class="chart chart-core chart-type-bar" data='
+<div id="chart-core" class="chart chart-type-bar" data='
 {
-	"bindto": ".chart-core",
+	"bindto": "#chart-core",
 	"padding": {
 		"bottom": 25
 	},
@@ -429,9 +429,9 @@ The above indicates a significant reduction (p<0.001) in global distress and in 
 
 ### PSYRATS
 
-<div class="chart chart-psyrats chart-type-bar" data='
+<div id="chart-psyrats" class="chart chart-type-bar" data='
 {
-	"bindto": ".chart-psyrats",
+	"bindto": "#chart-psyrats",
 	"padding": {
 		"bottom": 25
 	},
