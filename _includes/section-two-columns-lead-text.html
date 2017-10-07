@@ -7,4 +7,16 @@
 			{{ column2 | markdownify }}
 		</div>
 	</div>
+
+  {% if hidden-section-content %}
+  <div class="hidden-section">
+  	<div class="hidden-section-content">
+  		<div class="hidden-section-content-wrapper">
+  			{{ hidden-section-content | markdownify }}
+  		</div>
+  	</div>
+  	<a class="hidden-section-toggle" href="#"><span>{{ include.hidden_content_title }}</span></a>
+  </div>	
+	{% endif %}
+	
 </div>	

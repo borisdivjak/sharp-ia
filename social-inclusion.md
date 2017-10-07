@@ -532,6 +532,7 @@ _"In the UK, the prevalence of cardiometabolic risk factors in individuals with 
 is much higher than that observed in national general population studies as well as in most international 
 studies of patients with psychosis."_ (Gardener-Stood, et al, 2015).
 
+<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/0gcSodb99Us?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 
 {% endcapture %}

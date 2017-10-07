@@ -15,31 +15,12 @@ in partnership with the wider community. We tailor each programme to individual'
 
 
 
-
-{% capture column1 %}
-
-![Video placeholder](assets/images/video-placeholder.jpg "Video placeholder") 
-
-{% endcapture %}
-
-
-
-{% capture column2 %}
-
-> "The social aspect important, my problem is loneliness so I was glad that it’s not drug based. 
-> This is more productive than meds groups because help each other."
-> - Person who has used SHARP services
-
-{% endcapture %}
-
-
-
-{% include section-two-columns.html %}
-
-
-
+<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/mgyC3HEmwds?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 <hr />
+
+
+
 
 {% capture column1 %}
 
@@ -74,6 +55,10 @@ in things that are important to you.
 
 The intervention will help you to develop your strength, skills, coping mechanisms and social networks 
 and to achieve your goals. Your personal goals could include a focus on leisure, spirituality, education or work. 
+
+> "The social aspect important, my problem is loneliness so I was glad that it’s not drug based. 
+> This is more productive than meds groups because help each other."
+> - Person who has used SHARP services
 
 {% endcapture %}
 

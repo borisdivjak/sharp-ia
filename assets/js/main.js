@@ -62,7 +62,7 @@ $(function() {
 		// keep video ratio at 16:9
 		var iframeWidth = $('iframe[data-iframe-type="video"]').css('width'); // only target video frames
 		var iframeHeight = 0;
-		if (iframeWidth) iframeHeight = Math.floor(parseInt(iframeWidth) * 0.5625) + 'px';
+		if (iframeWidth) iframeHeight = Math.round(parseInt(iframeWidth) * 0.5625) + 'px';
 		$('iframe[data-iframe-type="video"]').css('height', iframeHeight);  // only target video frames
 		animateVisible();
 	});
@@ -77,6 +77,27 @@ $(function() {
 	$.sammy(function() {
 
 		function onLoadAlways() {
+				// add functionality for collapsible sections
+				$('.hidden-section-toggle').on('click', function(e) {
+					e.preventDefault();
+					container = $(this).parent();
+					content = $('.hidden-section-content', container);
+					if ($(container).hasClass('show')) {  // IF shown then hide
+						$(content).css('max-height', $(content).height()); // set to fixed height back from none
+						setTimeout(function() {
+							$(container).removeClass('show');						
+							$(content).css('max-height', '0');
+						}, 10 ); // need short delay to for height to change properly
+					}
+					else { // IF hidden then show
+						$(container).addClass('show');		
+						$(content).css('max-height', $('.hidden-section-content-wrapper', content).height()); // set to actual height of inner content
+						$(content).on('transitionend', function() {
+							if ($(container).hasClass('show')) $(this).css('max-height', 'none'); // set to none after transition in case of window resizing / other changes
+						});
+					}
+				});
+
 			$(window).resize(); // on load completecall resize to resize video iframes
 			$(window).scrollTop(0);
 			animateVisible();
@@ -100,27 +121,6 @@ $(function() {
 				//animate qootes
 				$('blockquote, .chart').addClass('animate-when-visible');
 				
-				// add functionality for collapsible sections
-				$('.hidden-section-toggle').on('click', function(e) {
-					e.preventDefault();
-					container = $(this).parent();
-					content = $('.hidden-section-content', container);
-					if ($(container).hasClass('show')) {  // IF shown then hide
-						$(content).css('max-height', $(content).height()); // set to fixed height back from none
-						setTimeout(function() {
-							$(container).removeClass('show');						
-							$(content).css('max-height', '0');
-						}, 10 ); // need short delay to for height to change properly
-					}
-					else { // IF hidden then show
-						$(container).addClass('show');		
-						$(content).css('max-height', $('.hidden-section-content-wrapper', content).height()); // set to actual height of inner content
-						$(content).on('transitionend', function() {
-							if ($(container).hasClass('show')) $(this).css('max-height', 'none'); // set to none after transition in case of window resizing / other changes
-						});
-					}
-				});
-
 				// load charts
 				$('.chart').each( function(index, element) {
 					var data = $.parseJSON($(element).attr('data'));
