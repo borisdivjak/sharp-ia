@@ -93,7 +93,7 @@ $(function() {
 			});
 		});
 
-	  this.get('#:page_title', function() {
+		this.get('#:page_title', function() {
 			$('main.page-content').load( this.params['page_title'] + '.html', function() {
 				$('body').attr('class', bodyclass + $('.subpage-main').data('body-class'));
 
