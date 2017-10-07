@@ -26,13 +26,4 @@ trust and wider mental health objectives.
 
 
 
-{% capture hidden-section-content %}
-
-<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/j_tOOpt3Q-M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-{% endcapture %}
-
-
-
-
-{% include section-two-columns-lead-text.html hidden_content_title="SHARP video introduction" %}
+{% include section-two-columns-lead-text.html  %}

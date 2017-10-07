@@ -14,6 +14,10 @@ A broad range of interventions and wellbeing initiatives are also offered in par
 {% include section-lead-text.html %}
 
 
+<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/j_tOOpt3Q-M?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+<hr />
+
 {% capture column1 %}
 
 ### The whole is more than the sum of it’s parts
@@ -41,9 +45,4 @@ CBT for psychosis, SIT.
 {% endcapture %}
 
 {% include section-two-columns.html %}
-
-
-<hr />
-
-<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/lnl1YWUdJfM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
