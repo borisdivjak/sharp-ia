@@ -7,7 +7,7 @@ body-class: subpage-green
 
 {% capture content %}
 SHARP has shown a reduction in costs to the trust over the last decade. Engagement in SHARP 
-interventions by those experiencing psychosis has lead to reduction in bed usage . Evidence 
+interventions by those experiencing psychosis has lead to reduction in bed days. Evidence 
 gathered demonstrates that SHARP has a positive impact on wellbeing of its users while creating 
 cost savings for the trust over the last decade (McDonald & Josefsberg, unpublished).  
 {% endcapture %}

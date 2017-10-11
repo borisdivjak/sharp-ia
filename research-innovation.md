@@ -22,36 +22,41 @@ interventions into our core therapy offering such as mindfulness and ACT.
 
 ### Pilot site and centre for Research
 
+SHARP have: 
 
-SHARP have participated and supported a range of other research interventions. SHARP was a pilot site for recruitment, 
+- Participated and supported a range of other research interventions. SHARP was a pilot site for recruitment, 
 training and delivery of interventions. 
 
-SHARP have also created a part time post which dedicates 1 day a week to research in Occupational Therapy. This post aims to: 
-1) Investigate the impact Occupational Therapists have in the area of Social Inclusion; 
+- A role dedicated to service evaluation and development, enabling SHARP to provide evidence and findings on 
+its therapeutic programme and continue innovating as a team. 
+
+- Created a part time post which dedicates 1 day a week to research in Occupational Therapy. This post aims to 
+1) Investigate the impact Occupational Therapists have in the area of Social Inclusion 
 2) Promote at a local level, the importance of Occupational Therapy research within a clinical setting.
 
-There is also a role dedicated to service evaluation and research, enabling SHARP to provide evidence and findings on its programme. 
-
-SHARP psychologists were trained in delivering [AVATAR Therapy](https://www.kcl.ac.uk/ioppn/avatar-project/therapy.aspx) and seeing participants. 
+- Psychologists who were trained and were research therapists, delivering 
+[AVATAR Therapy](https://www.kcl.ac.uk/ioppn/avatar-project/therapy.aspx). 
  
-Pilot site for recruitment and training delivery for [Consent For Contact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4296527/) 
-research into recruitment for mental health research. ‘Consent for Contact’ (C4C) enabled a framework 
-to expedite recruitment and contribute to equitable access to research.
+- Been a pilot site for recruitment and training delivery for [Consent For Contact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4296527/)
+research into recruitment for mental health research. ‘Consent for Contact’ (C4C) enabled a framework to expedite recruitment and 
+contribute to equitable access to research (C4C, 2014).
 
-[Lambeth pilot site](http://lambethcollaborative.org.uk/wp-content/uploads/2012/09/PHB-Pilot-Update-FINAL.pdf) 
-and part of wider cohort for the National Department of Health [Personal Health Budget Pilot](https://phbe.org.uk/) from 2009 until 2012. 
- 
- 
-[My Health Locker](https://www.myhealthlockerlondon.nhs.uk/): Assisted in recruitment and user led development of project. 
-Provided report on project evaluation of staff engagement and ways to increase buy in.
+- Seconded an Occupational Therapist to coordinate the Lambeth pilot site as part of the wider 
+cohort for the National Department of [Health Personal Health Budget Pilot](https://phbe.org.uk/)
+from 2009- 2012. SHARP were also part of the [steering group for this project](http://lambethcollaborative.org.uk/wp-content/uploads/2012/09/PHB-Pilot-Update-FINAL.pdf).
 
-Facilitation and recruitment of participants for  Walk this Way research pilot (2017)
-Dr Julie Williams, Post-Doctoral Research Worker: CLAHRC South London.
 
-Pilot site for peer led writing workshops:
-The Word Is Out, SHARP (2013). The word is out... out is the word. Self Published, UK.
+- Assisted in recruitment and user led development of [My Health Locker project](https://www.myhealthlockerlondon.nhs.uk/). 
+Provided a report on project evaluation of staff engagement and dissemination.
+
+- Facilitated and recruited participants for Walk this Way research pilot (Williams et al, 2017). 
+Dr Julie Williams, Post-Doctoral Research Worker: CLAHRC South London
+
+- Been a pilot site for peer led writing workshops: The Word Is Out, SHARP (2013). The word is out… out is the word. Self Published, UK.
 
 {% endcapture %}
+
+
 
 
 {% capture column2 %}

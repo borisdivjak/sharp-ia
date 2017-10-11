@@ -6,9 +6,9 @@ icon: assets/images/icon-right-support.png
 
 {% capture content %}
 The core business of SHARP is offering therapeutic and psychosocial interventions to enable people 
-with psychosis living in Lambeth access to a broad range of activity options. 
-Interventions are facilitated by a multidisciplinary team skilled in therapeutic delivery. 
-A broad range of interventions and wellbeing initiatives are also offered in partnership with the community.
+with psychosis living in Lambeth access to a broad range of therapy options. Interventions are facilitated 
+by a skilled multidisciplinary team who are experts in therapeutic delivery. A broad range of interventions and 
+wellbeing initiatives are also offered in partnership with the community.
 {% endcapture %}
 
 {% include section-lead-text.html %}
@@ -22,10 +22,10 @@ A broad range of interventions and wellbeing initiatives are also offered in par
 
 ### The whole is more than the sum of it’s parts
 
-Benefits of SHARP service include its single point of entry for multiple interventions – one assessment 
-to access all. This also benefits people in that all interventions all offered at one place – process 
-of getting to know and feel comfortable with staff enabling confidence to explore other interventions i.e. 
-CBT for psychosis, SIT.
+SHARP provides a single point of entry for multiple interventions – one assessment 
+to access all. This also benefits people in that all interventions all offered at one place – enabling a process 
+of getting to know and feel comfortable with staff and developing the confidence to explore other interventions 
+which the individual may find more challenging to engage in.
 
 > "Really impressed, they provided a wide range of things I could participate in."
 

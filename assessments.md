@@ -2,13 +2,14 @@
 icon: assets/images/icon-assessments.png
 ---
 
-# Assessment
+# Assessments
 
 
 {% capture content %}
 In order to understand the needs of the people we work with across the areas of Mind, Body and Flow SHARP 
 employs a range of standardised outcomes based measures to best capture change in symptoms, wellbeing, 
-activity levels and satisfaction across life domains. 
+occupational engagement and satisfaction across life domains. Our self rating measures allow service users 
+to engage with their therapy and treatment goals, identify their needs and track progress as we work together. 
 {% endcapture %}
 
 {% include section-lead-text.html %}
@@ -32,7 +33,7 @@ selected to assess desired outcomes for the people who use our service.
 
 > “It was a good conversation that I had with her... trying to find out what I needed and at the time she told 
 > me what was available [...] she was not rushing to just stick me somewhere in the group somewhere!”
-> - Person who has used Sharp services 
+> - Person accessing SHARP services 
 
 
 {% endcapture %}

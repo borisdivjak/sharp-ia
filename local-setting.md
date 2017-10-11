@@ -25,8 +25,8 @@ engage with therapies (SHARP Feasibility Study, 2006).
 
 ### Lambeth’s BME community
 
-SHARP has shown its ability to engage and work with people who represent Lambeth and 
-access its mental health services for psychosis. 
+SHARP has shown its ability to engage and work with people in Lambeth who access its secondary-care 
+mental health services for psychosis. 
 
 Of those who are seen and assessed by SHARP over the last decade 70% have gone on to engage 
 in therapy. 
@@ -35,7 +35,7 @@ A high proportion of those we have managed to engage and work with have come
 from and are representative of Lambeth’s BME community.
 
 > "Even on a bad day, it’s easy to get to you know? That helps get me out."
-> - Person who has used Sharp services 
+> - Person accessing SHARP services 
 
 {% endcapture %}
 
@@ -93,10 +93,3 @@ from and are representative of Lambeth’s BME community.
 
 
 {% include section-two-columns.html %}
-
-
-
-<hr />
-
-<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/qfqYR86ds54?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-

@@ -50,7 +50,7 @@ increase in wellbeing and activity level.
 
 > “It helped me to (have) a more productive day; I go to the gym, swimming, the park, meet friends, 
 > I’m active now, little by little better every day. Now it’s my life, I’m no longer a prisoner”.
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 <br />
 
@@ -543,14 +543,14 @@ studies of patients with psychosis."_ (Gardener-Stood, et al, 2015).
 
 > “[SHARP Football] made a big difference to my mental health, it’s given me confidence which I never had 
 > before when I was low. It keeps me focused on something in the day.”
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 > “I am more conscious now when shopping, and more conscious when I eat, what I put in my mouth. 
 > I read the labels. It was really nice meeting everyone”
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 > “I have cut down so much on smoking, I used to smoke over 40 a day.”
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 {% endcapture %}
 
@@ -594,11 +594,11 @@ more confident to grow, living life beyond a mental health diagnosis.
 
 > “I’ve got the confidence, it’s up to me now to switch on and say you know what I’m going to do it and 
 > I’m not going to be ashamed of anything” 
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 > “SHARP helped me. I’m working from part time to full time. But I am helping myself too. 
 > SHARP was there at a key point.” 
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 {% endcapture %}
 

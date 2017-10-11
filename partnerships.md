@@ -19,10 +19,11 @@ is through collaboration, co-production and the effective use of partnership wor
 
 ### Linking adults with psychosis to secondary services in Lambeth 
 
-SHARP provides connections within the community and helps bridge the gap between services and unmet 
-need of those experiencing severe and enduring mental illness. One of the ways in which SHARP has been 
-successful in addressing this need is through collaboration, co-production and the effective use of partnership work. 
-We have successfully partnered with over 50 organisations including voluntary sector, businesses and learning institutions. 
+SHARP provides connections within the community helping to bridge the gap between services and unmet 
+needs of people experiencing severe and enduring psychosis. SHARP has a positive history of successful collaborations, 
+partnerships and working in co-production with service users and the wider community. Based on service user feedback 
+identifying areas of need, we have successfully partnered with over 50 organisations including voluntary sector, 
+businesses and learning institutions. 
 
 {% endcapture %}
 
@@ -144,7 +145,7 @@ We have successfully partnered with over 50 organisations including voluntary se
 
 An example of this has been our recent partnership work and collaboration with the Comedy School, 
 Ritzy cinema and recovery college to co-produce an annual event in honor of world mental health day. 
-The series of improvisation workshops and events have had a major impact on people’s well-being.
+The series of improvisation workshops and events have had positive impact on people’s well-being and social inclusion.
 
 <iframe data-iframe-type="video" src="https://player.vimeo.com/video/199067256?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -158,11 +159,11 @@ The series of improvisation workshops and events have had a major impact on peop
 > "Impro bought out a side of me that’s been hidden my entire life. In the course, and in impro generally 
 > taking risk is positive, constructive and life affirming. I can honestly say that, for me, it’s 
 > been a life changer and now I’m such an enthusiast!"
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 	
 > "when I feel anxious or in a low mood, I say to myself ‘okay, let’s go into impro mode’ 
 > and I just impro my way through it! There’s nothing to fear, just go for it!"
-> - Person who has used SHARP services
+> - Person accessing SHARP services
 
 {% endcapture %}
 
