@@ -841,12 +841,17 @@ iframe[data-iframe-type="gmaps"] {
 	.c3-axis-x .tick text {
 		font-size: $smaller-font-size;
 		font-weight: 500;
-		transform: translate3d(0,5px, 0);
+		transform: translate3d(0, 5px, 0);
 		fill: white;
 
 		.tiny-text & {
 			font-size: $smallest-font-size;	
 		}
+
+  	@include media-query($on-mobile) {
+  		transform: translate3d(0, -3px, 0);
+  	}
+
 	}
 	
 	.c3-legend-item {
