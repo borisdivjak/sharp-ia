@@ -144,7 +144,7 @@ businesses and learning institutions.
 ### Collaboration with the Comedy School, Ritzy Cinema and Recovery College 
 
 An example of this has been our recent partnership work and collaboration with the Comedy School, 
-Ritzy cinema and recovery college to co-produce an annual event in honor of world mental health day. 
+Ritzy Cinema and Recovery College to co-produce an annual event in honor of World Mental Health Day. 
 The series of improvisation workshops and events have had positive impact on people’s well-being and social inclusion.
 
 <iframe data-iframe-type="video" src="https://player.vimeo.com/video/199067256?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -161,7 +161,7 @@ The series of improvisation workshops and events have had positive impact on peo
 > been a life changer and now I’m such an enthusiast!"
 > - Person accessing SHARP services
 	
-> "when I feel anxious or in a low mood, I say to myself ‘okay, let’s go into impro mode’ 
+> "When I feel anxious or in a low mood, I say to myself ‘okay, let’s go into impro mode’ 
 > and I just impro my way through it! There’s nothing to fear, just go for it!"
 > - Person accessing SHARP services
 

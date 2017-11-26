@@ -32,7 +32,7 @@ SHARP uses of a range of [health based outcome measures](https://www.institutefo
 selected to assess desired outcomes for the people who use our service.
 
 > “It was a good conversation that I had with her... trying to find out what I needed and at the time she told 
-> me what was available [...] she was not rushing to just stick me somewhere in the group somewhere!”
+> me what was available [...] she was not rushing to just stick me in the group somewhere!”
 > - Person accessing SHARP services 
 
 

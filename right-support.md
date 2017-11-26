@@ -23,7 +23,7 @@ wellbeing initiatives are also offered in partnership with the community.
 ### The whole is more than the sum of it’s parts
 
 SHARP provides a single point of entry for multiple interventions – one assessment 
-to access all. This also benefits people in that all interventions all offered at one place – enabling a process 
+to access all. This also benefits people in that all interventions are offered ine one place – enabling a process 
 of getting to know and feel comfortable with staff and developing the confidence to explore other interventions 
 which the individual may find more challenging to engage in.
 

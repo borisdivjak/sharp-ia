@@ -8,10 +8,10 @@ body-class: subpage-green
 
 {% capture content %}
 SHARP plays an integral part in building and sustaining communities, networks and supports for people 
-in Lambeth who experience psychosis. The people the team works with experience severe and enduring illness 
-that impacts their lives on a daily basis. SHARP support people in their recovery and build strengthen 
-the core economy through increasing people’s resilience and independence. By providing opportunities to 
-learn and take calculated risks we help build and strengthen people’s support to access their local community.
+in Lambeth who experience psychosis. SHARP works with people who experience severe and enduring mental illness 
+that impacts their lives on a daily basis. SHARP supports people in their recovery and strengthens the core economy 
+through enabling people to increase their resilience, independence and hope for the future. By providing opportunities 
+to learn and take calculated risks we help build and strengthen people’s support to access their local community.
 {% endcapture %}
 
 {% include section-lead-text.html %}
@@ -280,8 +280,8 @@ Results indicate statistically significant (p< 0.001) improvement in wellbeing s
 }
 '></div>
 
-The DIALOG is a measure used to support a structured conversation between a clinician and the person they are 
-working with. It focusses on the person’s needs for care, treatment satisfaction and views on quality of life.
+The DIALOG is a measure used to support a structured conversation between a patient and a clinician. 
+It focusses on the patient's needs for care, treatment satisfaction and views on quality of life.
 
 Results show a statistically significant (p<0.001) increased satisfaction across 7 life domains spanning areas 
 such as health, relationships, job and living situation.
@@ -316,7 +316,7 @@ such as health, relationships, job and living situation.
 
 ## Reduction in distressing symptoms
 
-Results from those engaging in psychological interventions since attending sharp
+Results from those engaging in psychological interventions since attending SHARP
 show a statistically and functionally significant reduction in distressing psychotic symptoms.
 
 {% endcapture %}
@@ -592,8 +592,8 @@ more confident to grow, living life beyond a mental health diagnosis.
 
 {% capture column2 %}
 
-> “I’ve got the confidence, it’s up to me now to switch on and say you know what I’m going to do it and 
-> I’m not going to be ashamed of anything” 
+> “I’ve got the confidence, it’s up to me now to switch on and say: 'you know what, I’m going to do it and 
+> I’m not going to be ashamed of anything!'” 
 > - Person accessing SHARP services
 
 > “SHARP helped me. I’m working from part time to full time. But I am helping myself too. 

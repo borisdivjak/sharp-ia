@@ -6,7 +6,7 @@ icon: assets/images/icon-interventions.png
 
 {% capture content %}
 SHARP offers the entire range of [NICE recommended interventions for psychosis](https://www.nice.org.uk/guidance/conditions-and-diseases/mental-health-and-behavioural-conditions/psychosis-and-schizophrenia)
-delivered by psychologist and Occupational Therapists. We provide a research hub that offers additional support to people 
+delivered by psychologists and occupational therapists. We provide a research hub that offers additional support to people 
 via pilot studies including a broad range of newly researched interventions currently not available anywhere else. 
 We also offer a range of wellbeing initiatives in partnership with the wider community. We tailor each programme to individual's needs according to mind, body and flow.
 {% endcapture %}
@@ -31,7 +31,7 @@ A personalised healthy eating, exercise and leisure programme developed with you
 The programme has close links with local community resources to make it easy for you to build health 
 and wellbeing into your daily routine.
 
-As part f this we have access to a gym, an aqua aerobics programme and a football team run in 
+As part of this we have access to a gym, an aqua aerobics programme and a football team run in 
 partnership with the Brixton and Ferndale Leisure centres.
 
 
@@ -56,7 +56,7 @@ in things that are important to you.
 The intervention will help you to develop your strength, skills, coping mechanisms and social networks 
 and to achieve your goals. Your personal goals could include a focus on leisure, spirituality, education or work. 
 
-> "The social aspect important, my problem is loneliness so I was glad that it’s not drug based. 
+> "The social aspect is important, my problem is loneliness so I was glad that it’s not drug based. 
 > This is more productive than meds groups because help each other."
 > - Person accessing SHARP services
 
