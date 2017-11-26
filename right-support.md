@@ -14,7 +14,7 @@ wellbeing initiatives are also offered in partnership with the community.
 {% include section-lead-text.html %}
 
 
-<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/lnl1YWUdJfM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<iframe data-iframe-type="video" width="560" height="315" src="https://www.youtube.com/embed/jWx3QeC71TQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 <hr />
 
